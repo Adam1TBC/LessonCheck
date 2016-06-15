@@ -1,0 +1,23 @@
+PODS:
+  - HamburgerButton (1.0.0)
+  - HamburgerMenu (1.0.2):
+    - HamburgerButton (~> 1.0)
+  - Realm (1.0.0):
+    - Realm/Headers (= 1.0.0)
+  - Realm/Headers (1.0.0)
+  - RealmSwift (1.0.0):
+    - Realm (= 1.0.0)
+
+DEPENDENCIES:
+  - HamburgerMenu
+  - RealmSwift
+
+SPEC CHECKSUMS:
+  HamburgerButton: 91c94476e75c55b563c6a8ccdc05eda8c977fbb1
+  HamburgerMenu: 71a63863d087b910ff89a1c229ffb134b7ef65ac
+  Realm: e15cd8e7c11d3e576f628ba0b7cb855269b4991c
+  RealmSwift: 3229306d020d96f83b335f87a0dcbf2cef0e6a2b
+
+PODFILE CHECKSUM: ae30d7c4f180fa60da66a659fb950205b935dbb4
+
+COCOAPODS: 1.0.1
