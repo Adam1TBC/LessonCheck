@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Tuesday.png",
+      "filename" : "Timetable.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Tuesday@2x.png",
+      "filename" : "Timetable@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Tuesday@3x.png",
+      "filename" : "Timetable@3x.png",
       "scale" : "3x"
     }
   ],

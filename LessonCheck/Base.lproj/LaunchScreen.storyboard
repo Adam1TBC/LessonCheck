@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,15 +13,83 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7P-Az-MDs">
+                                <rect key="frame" x="20" y="625" width="335" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="H04-Fd-yuC"/>
+                                    <constraint firstAttribute="height" constant="16" id="j4q-dk-SOe"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Copyright © 2016 Adam Smirnov &amp; Nikita Vasilenko.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.82352941176470584" green="0.82352941176470584" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="10" name="Helvetica-Bold"/>
+                                            <integer key="NSLigature" value="0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="26.449999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="26.450000762939453">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lt0-c1-8xd">
+                                <rect key="frame" x="0.0" y="644" width="375" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="PKI-Rw-BPE"/>
+                                    <constraint firstAttribute="width" constant="375" id="cki-lN-OFk"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="All rights reserved.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.82352941176470584" green="0.82352941176470584" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="10" name="Helvetica-Bold"/>
+                                            <integer key="NSLigature" value="0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="26.449999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="26.450000762939453">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlightedImage="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="Mv8-Yu-eOZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z7P-Az-MDs" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" id="1cK-Iu-0da"/>
+                            <constraint firstItem="Mv8-Yu-eOZ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ALF-ev-8uz"/>
+                            <constraint firstItem="lt0-c1-8xd" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Bom-Ah-SeN"/>
+                            <constraint firstItem="Mv8-Yu-eOZ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Fbp-lG-fpk"/>
+                            <constraint firstAttribute="trailing" secondItem="lt0-c1-8xd" secondAttribute="trailing" id="QPS-v3-1Yo"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="lt0-c1-8xd" secondAttribute="bottom" constant="8" id="Zwl-MX-97J"/>
+                            <constraint firstAttribute="trailing" secondItem="Z7P-Az-MDs" secondAttribute="trailing" constant="20" id="iXQ-OK-83R"/>
+                            <constraint firstItem="lt0-c1-8xd" firstAttribute="top" secondItem="Z7P-Az-MDs" secondAttribute="bottom" constant="3" id="md4-TN-EWw"/>
+                            <constraint firstAttribute="trailing" secondItem="Mv8-Yu-eOZ" secondAttribute="trailing" id="uJQ-9V-6Gr"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Mv8-Yu-eOZ" secondAttribute="bottom" id="uXI-i9-rKt"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="374.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Launch" width="375" height="667"/>
+    </resources>
 </document>

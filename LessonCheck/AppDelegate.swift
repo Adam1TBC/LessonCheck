@@ -3,7 +3,7 @@
 //  LessonCheck
 //
 //  Created by Адам Смирнов on 14.06.16.
-//  Copyright © 2016 Адам Смирнов. All rights reserved.
+//  Copyright © 2016 Адам Смирнов & Никита Василенко. All rights reserved.
 //
 
 import UIKit
