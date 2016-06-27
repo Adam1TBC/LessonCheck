@@ -1,6 +1,0 @@
-framework module HamburgerButton {
-  umbrella header "HamburgerButton-umbrella.h"
-
-  export *
-  module * { export * }
-}

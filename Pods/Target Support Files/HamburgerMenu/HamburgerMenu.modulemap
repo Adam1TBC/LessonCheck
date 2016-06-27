@@ -1,6 +1,0 @@
-framework module HamburgerMenu {
-  umbrella header "HamburgerMenu-umbrella.h"
-
-  export *
-  module * { export * }
-}

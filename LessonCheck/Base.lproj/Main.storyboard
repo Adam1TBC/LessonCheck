@@ -16,33 +16,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" image="BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="140-cs-D61">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="140-cs-D61">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BarBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="3FO-4k-8C0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BarBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="3FO-4k-8C0">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="als-kM-fsE">
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="als-kM-fsE">
                                 <rect key="frame" x="236" y="60" width="135" height="335"/>
-                                <state key="normal" title="Events" image="Events"/>
+                                <state key="normal" backgroundImage="Events"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Noc-bK-FYy">
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Noc-bK-FYy">
                                 <rect key="frame" x="4" y="395" width="367" height="268"/>
-                                <state key="normal" title="Timetable" image="Timetable"/>
+                                <state key="normal" backgroundImage="Timetable"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9P3-LS-SC5">
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9P3-LS-SC5">
                                 <rect key="frame" x="4" y="60" width="232" height="335"/>
-                                <state key="normal" title="HomeWork" image="HomeWork"/>
+                                <state key="normal" backgroundImage="HomeWork"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="als-kM-fsE" secondAttribute="trailing" constant="4" id="0xp-iH-YOT"/>
+                            <constraint firstItem="als-kM-fsE" firstAttribute="leading" secondItem="9P3-LS-SC5" secondAttribute="trailing" id="17U-TA-JbB"/>
+                            <constraint firstAttribute="trailing" secondItem="140-cs-D61" secondAttribute="trailing" id="6x2-HK-3AY"/>
+                            <constraint firstItem="3FO-4k-8C0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9NA-xl-tSa"/>
+                            <constraint firstItem="als-kM-fsE" firstAttribute="top" secondItem="3FO-4k-8C0" secondAttribute="bottom" id="CGq-3p-uK2"/>
+                            <constraint firstItem="9P3-LS-SC5" firstAttribute="top" secondItem="3FO-4k-8C0" secondAttribute="bottom" id="DXQ-mN-b5d"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="140-cs-D61" secondAttribute="bottom" id="P1U-O0-IpK"/>
+                            <constraint firstItem="Noc-bK-FYy" firstAttribute="top" secondItem="als-kM-fsE" secondAttribute="bottom" id="U98-rc-X0U"/>
+                            <constraint firstItem="140-cs-D61" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V5r-oc-bTt"/>
+                            <constraint firstItem="Noc-bK-FYy" firstAttribute="top" secondItem="9P3-LS-SC5" secondAttribute="bottom" id="cj6-iW-C6a"/>
+                            <constraint firstItem="140-cs-D61" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dhY-0o-XM6"/>
+                            <constraint firstAttribute="trailing" secondItem="3FO-4k-8C0" secondAttribute="trailing" id="l2i-ij-NBq"/>
+                            <constraint firstAttribute="trailing" secondItem="Noc-bK-FYy" secondAttribute="trailing" constant="4" id="o0Y-e3-gMt"/>
+                            <constraint firstItem="Noc-bK-FYy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="4" id="tiK-iH-zjz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Noc-bK-FYy" secondAttribute="bottom" constant="4" id="uwN-ib-Zf4"/>
+                            <constraint firstItem="9P3-LS-SC5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="4" id="vJU-Xt-lAd"/>
+                            <constraint firstItem="3FO-4k-8C0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zbt-cP-JZd"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bID-TD-kkf"/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1334.5" y="452.5"/>
+            <point key="canvasLocation" x="1378.5" y="451.5"/>
         </scene>
     </scenes>
     <resources>

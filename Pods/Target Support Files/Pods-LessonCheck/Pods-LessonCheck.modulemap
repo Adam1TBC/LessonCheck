@@ -1,6 +1,0 @@
-framework module Pods_LessonCheck {
-  umbrella header "Pods-LessonCheck-umbrella.h"
-
-  export *
-  module * { export * }
-}
