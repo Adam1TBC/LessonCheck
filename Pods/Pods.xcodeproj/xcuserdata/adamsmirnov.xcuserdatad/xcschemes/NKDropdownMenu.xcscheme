@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4957EA3B2B9314B4D30C81C417531BBB'
-               BlueprintName = 'RealmSwift'
+               BlueprintIdentifier = 'B84936B3FE16344AF4D0565B3F4655B2'
+               BlueprintName = 'NKDropdownMenu'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'RealmSwift.framework'>
+               BuildableName = 'NKDropdownMenu.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

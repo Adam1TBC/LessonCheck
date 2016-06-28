@@ -8,5 +8,6 @@ target 'LessonCheck' do
   # Pods for LessonCheck
     pod'RealmSwift'
     pod'HamburgerMenu'
+    pod’NKDropdownMenu’
 
 end

@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>NKDropdownMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-LessonCheck.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,7 +47,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0D129A612F0BEBD455C3EC391525144A</key>
+		<key>2477A5BC5E7A20D1DD79C793B93CDA48</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,6 +62,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>4957EA3B2B9314B4D30C81C417531BBB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>82F896B593A9CA2774CCC3B6C01DA264</key>
 		<dict>
 			<key>primary</key>
@@ -67,12 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C7901C5BD4CCAE95C69318447F6AABED</key>
+		<key>B81B4D4AD67A4D2152ECFFC533DB1A82</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DC2E4CA7BCA07E6089617F1A13099559</key>
+		<key>B84936B3FE16344AF4D0565B3F4655B2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
