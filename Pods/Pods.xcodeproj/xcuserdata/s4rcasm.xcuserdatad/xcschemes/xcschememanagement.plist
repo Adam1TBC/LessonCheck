@@ -24,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>NKDropdownMenu.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>Pods-LessonCheck.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -47,6 +52,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>2477A5BC5E7A20D1DD79C793B93CDA48</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2E3EDE808A1D4BCEE847B60D8554A130</key>
 		<dict>
 			<key>primary</key>
@@ -57,12 +67,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>4957EA3B2B9314B4D30C81C417531BBB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>82F896B593A9CA2774CCC3B6C01DA264</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>A8459561FBAD2A2867BA63984B80A72A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B81B4D4AD67A4D2152ECFFC533DB1A82</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B84936B3FE16344AF4D0565B3F4655B2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

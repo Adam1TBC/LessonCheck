@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NoJ-R8-A0u">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
@@ -64,12 +64,37 @@
             </objects>
             <point key="canvasLocation" x="1378.5" y="451.5"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="GPE-Nv-t4F">
+            <objects>
+                <viewController id="NoJ-R8-A0u" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BJO-ad-3dI"/>
+                        <viewControllerLayoutGuide type="bottom" id="TMw-4Y-zV8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sf9-5I-QT2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StrartMenuBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="n4Q-00-YZL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5G2-3t-lJU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="934.5" y="451.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BackGround" width="375" height="667"/>
         <image name="BarBackGround" width="375" height="60"/>
         <image name="Events" width="135" height="335"/>
         <image name="HomeWork" width="232" height="335"/>
+        <image name="StrartMenuBackGround" width="375" height="667"/>
         <image name="Timetable" width="367" height="268"/>
     </resources>
 </document>
