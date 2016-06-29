@@ -113,8 +113,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="9so-R7-K2l">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0f8-ck-aJm">
-                                <rect key="frame" x="4" y="41" width="232" height="335"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0f8-ck-aJm">
+                                <rect key="frame" x="4" y="44" width="232" height="332"/>
                                 <state key="normal" backgroundImage="HomeWork">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Homework">
@@ -127,8 +127,8 @@
                                     </attributedString>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nV4-tL-W2j">
-                                <rect key="frame" x="236" y="41" width="135" height="335"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nV4-tL-W2j">
+                                <rect key="frame" x="236" y="44.5" width="135" height="331.5"/>
                                 <state key="normal" backgroundImage="Events">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Events">
@@ -141,7 +141,7 @@
                                     </attributedString>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rbt-Mj-enB">
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rbt-Mj-enB">
                                 <rect key="frame" x="4" y="376" width="367" height="287"/>
                                 <state key="normal" backgroundImage="Timetable">
                                     <attributedString key="attributedTitle">
@@ -158,18 +158,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Rbt-Mj-enB" firstAttribute="leading" secondItem="KKL-hO-N1U" secondAttribute="leading" constant="4" id="3do-2i-o5w"/>
-                            <constraint firstItem="nV4-tL-W2j" firstAttribute="leading" secondItem="0f8-ck-aJm" secondAttribute="trailing" id="AVS-Sa-aJQ"/>
-                            <constraint firstItem="IEk-pD-j8j" firstAttribute="top" secondItem="9so-R7-K2l" secondAttribute="bottom" id="C2i-8P-uwz"/>
-                            <constraint firstItem="Rbt-Mj-enB" firstAttribute="top" secondItem="nV4-tL-W2j" secondAttribute="bottom" id="FH1-kq-lRr"/>
-                            <constraint firstItem="9so-R7-K2l" firstAttribute="leading" secondItem="KKL-hO-N1U" secondAttribute="leading" id="Nf0-ja-tWj"/>
-                            <constraint firstItem="0f8-ck-aJm" firstAttribute="leading" secondItem="KKL-hO-N1U" secondAttribute="leading" constant="4" id="Wrv-lh-dlC"/>
-                            <constraint firstAttribute="trailing" secondItem="nV4-tL-W2j" secondAttribute="trailing" constant="4" id="hK4-m2-DsH"/>
-                            <constraint firstItem="9so-R7-K2l" firstAttribute="top" secondItem="eds-M5-D4Y" secondAttribute="bottom" id="odP-JB-PCG"/>
-                            <constraint firstAttribute="trailing" secondItem="9so-R7-K2l" secondAttribute="trailing" id="qKH-Mc-aJ3"/>
-                            <constraint firstItem="Rbt-Mj-enB" firstAttribute="top" secondItem="0f8-ck-aJm" secondAttribute="bottom" id="sd1-R2-tT1"/>
-                            <constraint firstAttribute="trailing" secondItem="Rbt-Mj-enB" secondAttribute="trailing" constant="4" id="zIr-85-JeU"/>
-                            <constraint firstItem="IEk-pD-j8j" firstAttribute="top" secondItem="Rbt-Mj-enB" secondAttribute="bottom" constant="4" id="zjV-g5-fe5"/>
+                            <constraint firstAttribute="trailing" secondItem="9so-R7-K2l" secondAttribute="trailing" id="6AT-zq-DYC"/>
+                            <constraint firstItem="nV4-tL-W2j" firstAttribute="top" secondItem="eds-M5-D4Y" secondAttribute="bottom" constant="0.5" id="6mb-rd-38g"/>
+                            <constraint firstItem="9so-R7-K2l" firstAttribute="top" secondItem="eds-M5-D4Y" secondAttribute="bottom" id="UK6-HA-JTE"/>
+                            <constraint firstAttribute="trailing" secondItem="nV4-tL-W2j" secondAttribute="trailing" constant="4" id="Uve-5w-roG"/>
+                            <constraint firstItem="Rbt-Mj-enB" firstAttribute="top" secondItem="nV4-tL-W2j" secondAttribute="bottom" id="gRR-eo-Vf2"/>
+                            <constraint firstItem="0f8-ck-aJm" firstAttribute="leading" secondItem="KKL-hO-N1U" secondAttribute="leading" constant="4" id="hTE-5Q-luu"/>
+                            <constraint firstItem="Rbt-Mj-enB" firstAttribute="leading" secondItem="KKL-hO-N1U" secondAttribute="leading" constant="4" id="jpH-CN-hV5"/>
+                            <constraint firstItem="IEk-pD-j8j" firstAttribute="top" secondItem="9so-R7-K2l" secondAttribute="bottom" id="l8W-yX-J7L"/>
+                            <constraint firstAttribute="trailing" secondItem="Rbt-Mj-enB" secondAttribute="trailing" constant="4" id="n7R-Fe-Vl2"/>
+                            <constraint firstItem="IEk-pD-j8j" firstAttribute="top" secondItem="Rbt-Mj-enB" secondAttribute="bottom" constant="4" id="oSu-z2-YAl"/>
+                            <constraint firstItem="0f8-ck-aJm" firstAttribute="top" secondItem="eds-M5-D4Y" secondAttribute="bottom" id="t8G-EF-MsB"/>
+                            <constraint firstItem="9so-R7-K2l" firstAttribute="leading" secondItem="KKL-hO-N1U" secondAttribute="leading" id="trT-Nq-VhO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NaW-n4-AK8"/>
@@ -194,7 +194,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tqh-8h-16L">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.9882352941176471" green="0.23529411764705882" blue="0.031372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
