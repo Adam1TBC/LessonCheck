@@ -15,6 +15,53 @@ class MainMenuViewController: UIViewController {
     @IBOutlet weak var homeworkButton: UIButton!
     @IBOutlet weak var eventsButton: UIButton!
     @IBOutlet weak var timeButton: UIButton!
+    
+    //Анимация
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        
+        let scaleHomework       = CGAffineTransformMakeScale(0, 0)
+        let translateHomework   = CGAffineTransformMakeTranslation(-300, 0)
+        let scaleEvents         = CGAffineTransformMakeScale(0, 0)
+        let translateEvents     = CGAffineTransformMakeTranslation(300, 0)
+        let scaleTime           = CGAffineTransformMakeScale(0, 0)
+        let translateTime       = CGAffineTransformMakeTranslation(0, 500)
+        
+        
+        homeworkButton.transform = CGAffineTransformConcat(scaleHomework, translateHomework)
+        eventsButton.transform = CGAffineTransformConcat(scaleEvents, translateEvents)
+        timeButton.transform = CGAffineTransformConcat(scaleTime, translateTime)
+        
+        //Вывод анимации
+        UIView.animateWithDuration(2) { () -> Void in
+            let scale       = CGAffineTransformMakeScale(1, 1)
+            let translate   = CGAffineTransformMakeTranslation(0, 0)
+            self.homeworkButton.transform   = CGAffineTransformConcat(scale, translate)
+        }
+        UIView.animateWithDuration(2) { () -> Void in
+            
+            let scale = CGAffineTransformMakeScale(1 , 1)
+            let translate = CGAffineTransformMakeTranslation(0, 0)
+            
+            self.eventsButton.transform = CGAffineTransformConcat(scale, translate)
+            
+            
+        }
+        
+        UIView.animateWithDuration(2.5) { () -> Void in
+            
+            let scale = CGAffineTransformMakeScale(1 , 1)
+            let translate = CGAffineTransformMakeTranslation(0, 0)
+            
+            self.timeButton.transform = CGAffineTransformConcat(scale, translate)
+            
+            
+        }
+        
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -28,60 +75,11 @@ class MainMenuViewController: UIViewController {
         }
         
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: hamburgerMenu)
-        
-        
-        
-        
-        
-
 
         // Do any additional setup after loading the view.
     }
     
-    //Анимация
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(true)
-        
-        let scaleHomework       = CGAffineTransformMakeScale(0.5, 1)
-        let translateHomework   = CGAffineTransformMakeTranslation(-300, 0)
-        let scaleEvents         = CGAffineTransformMakeScale(0.5, 1)
-        let translateEvents     = CGAffineTransformMakeTranslation(300, 0)
-        let scaleTime           = CGAffineTransformMakeScale(0.5, 1)
-        let translateTime       = CGAffineTransformMakeTranslation(-700, 0)
-        
-        
-        homeworkButton.transform = CGAffineTransformConcat(scaleHomework, translateHomework)
-        eventsButton.transform = CGAffineTransformConcat(scaleEvents, translateEvents)
-        timeButton.transform = CGAffineTransformConcat(scaleTime, translateTime)
-        
-        //Вывод анимации
-        UIView.animateWithDuration(2) { () -> Void in
-                let scale       = CGAffineTransformMakeScale(1, 1)
-                let translate   = CGAffineTransformMakeTranslation(0, 0)
-            self.homeworkButton.transform   = CGAffineTransformConcat(scale, translate)
-        }
-           UIView.animateWithDuration(3) { () -> Void in
-            
-             let scale = CGAffineTransformMakeScale(1 , 1)
-             let translate = CGAffineTransformMakeTranslation(0, 0)
-            
-             self.eventsButton.transform = CGAffineTransformConcat(scale, translate)
-            
-            
-        }
-        
-                UIView.animateWithDuration(4) { () -> Void in
     
-                        let scale = CGAffineTransformMakeScale(1 , 1)
-                        let translate = CGAffineTransformMakeTranslation(0, 0)
-    
-                        self.timeButton.transform = CGAffineTransformConcat(scale, translate)
-    
-    
-    }
-    
-    
-    }
 
 
     override func didReceiveMemoryWarning() {

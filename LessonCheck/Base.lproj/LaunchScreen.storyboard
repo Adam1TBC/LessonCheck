@@ -16,12 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7P-Az-MDs">
-                                <rect key="frame" x="20" y="625" width="335" height="16"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StrartMenuBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="Mv8-Yu-eOZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7P-Az-MDs">
+                                <rect key="frame" x="20" y="632" width="335" height="12"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Copyright © 2016 Adam Smirnov &amp; Nikita Vasilenko.">
                                         <attributes>
-                                            <color key="NSColor" red="0.82352941176470584" green="0.82352941176470584" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="10" name="Helvetica-Bold"/>
                                             <integer key="NSLigature" value="0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="26.449999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
@@ -36,12 +39,12 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lt0-c1-8xd">
-                                <rect key="frame" x="0.0" y="644" width="375" height="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lt0-c1-8xd">
+                                <rect key="frame" x="0.0" y="647" width="375" height="12"/>
                                 <attributedString key="attributedText">
                                     <fragment content="All rights reserved.">
                                         <attributes>
-                                            <color key="NSColor" red="0.82352941176470584" green="0.82352941176470584" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="10" name="Helvetica-Bold"/>
                                             <integer key="NSLigature" value="0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="26.449999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
@@ -56,20 +59,30 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" highlightedImage="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="Mv8-Yu-eOZ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lt0-c1-8xd" secondAttribute="trailing" id="DyX-uA-cOL"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="lt0-c1-8xd" secondAttribute="bottom" constant="8" id="Kbd-WH-xPA"/>
+                            <constraint firstItem="lt0-c1-8xd" firstAttribute="top" secondItem="Z7P-Az-MDs" secondAttribute="bottom" constant="3" id="MEq-Z4-CUd"/>
+                            <constraint firstItem="lt0-c1-8xd" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Pp1-Be-450"/>
+                            <constraint firstAttribute="trailing" secondItem="Mv8-Yu-eOZ" secondAttribute="trailing" id="Q8C-rQ-bsn"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Mv8-Yu-eOZ" secondAttribute="bottom" id="QR6-wL-otc"/>
+                            <constraint firstItem="Mv8-Yu-eOZ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="YQh-ny-3gQ"/>
+                            <constraint firstItem="Z7P-Az-MDs" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" id="fQN-Ts-sPq"/>
+                            <constraint firstItem="Mv8-Yu-eOZ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="soL-Tq-ZBd"/>
+                            <constraint firstAttribute="trailing" secondItem="Z7P-Az-MDs" secondAttribute="trailing" constant="20" id="vLk-9I-r5o"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="G86-kA-d7D"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.5" y="374.5"/>
+            <point key="canvasLocation" x="436.5" y="397.5"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Launch" width="375" height="667"/>
+        <image name="StrartMenuBackGround" width="375" height="667"/>
     </resources>
 </document>
