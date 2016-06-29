@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NKDropdownMenu
 
 class MainMenuViewController: UIViewController {
 
@@ -15,9 +16,27 @@ class MainMenuViewController: UIViewController {
     @IBOutlet weak var timeButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        let items = ["Most Popular", "Latest", "Trending", "Nearest", "Top Picks"]
+        
+        let hamburgerMenu: NKDropdownMenu = NKDropdownMenu(items: items)
+        
+        hamburgerMenu.didSelectItemAtIndexHandler = {(indexPath: Int) -> () in
+            print("Did select item at index: \(indexPath)")
+            
+        }
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: hamburgerMenu)
+        
+        
+        
+        
+        
+
 
         // Do any additional setup after loading the view.
     }
+    
     //Анимация
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
