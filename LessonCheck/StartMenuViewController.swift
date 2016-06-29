@@ -28,7 +28,8 @@ class StartMenuViewController: UIViewController {
         continueButton.transform  = CGAffineTransformConcat(scaleContinue, translateContinue)
         thanksButton.transform    = CGAffineTransformConcat(scaleThanks, translateThanks)
         
-        UIView.animateWithDuration(1.25) { () -> Void in
+        //Вывод анимации
+        UIView.animateWithDuration(2) { () -> Void in
             
             let scaleThanks           = CGAffineTransformMakeScale(1, 1)
             let translateThanks       = CGAffineTransformMakeTranslation(0, 0)

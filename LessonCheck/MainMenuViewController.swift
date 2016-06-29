@@ -22,19 +22,20 @@ class MainMenuViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
         
-        let scaleHomework       = CGAffineTransformMakeScale(1, 1)
-        let translateHomework   = CGAffineTransformMakeTranslation(0, -300)
-        let scaleEvents         = CGAffineTransformMakeScale(1, 1)
-        let translateEvents     = CGAffineTransformMakeTranslation(0, -300)
-        let scaleTime           = CGAffineTransformMakeScale(1, 1)
-        let translateTime       = CGAffineTransformMakeTranslation(0, -700)
+        let scaleHomework       = CGAffineTransformMakeScale(0.5, 1)
+        let translateHomework   = CGAffineTransformMakeTranslation(-300, 0)
+        let scaleEvents         = CGAffineTransformMakeScale(0.5, 1)
+        let translateEvents     = CGAffineTransformMakeTranslation(300, 0)
+        let scaleTime           = CGAffineTransformMakeScale(0.5, 1)
+        let translateTime       = CGAffineTransformMakeTranslation(-700, 0)
         
         
         homeworkButton.transform = CGAffineTransformConcat(scaleHomework, translateHomework)
         eventsButton.transform = CGAffineTransformConcat(scaleEvents, translateEvents)
         timeButton.transform = CGAffineTransformConcat(scaleTime, translateTime)
         
-        UIView.animateWithDuration(1.25) { () -> Void in
+        //Вывод анимации
+        UIView.animateWithDuration(2) { () -> Void in
             let scaleHomework       = CGAffineTransformMakeScale(1, 1)
             let translateHomework   = CGAffineTransformMakeTranslation(0, 0)
             let scaleEvents         = CGAffineTransformMakeScale(1, 1)
