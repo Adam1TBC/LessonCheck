@@ -36,18 +36,33 @@ class MainMenuViewController: UIViewController {
         
         //Вывод анимации
         UIView.animateWithDuration(2) { () -> Void in
-            let scaleHomework       = CGAffineTransformMakeScale(1, 1)
-            let translateHomework   = CGAffineTransformMakeTranslation(0, 0)
-            let scaleEvents         = CGAffineTransformMakeScale(1, 1)
-            let translateEvents     = CGAffineTransformMakeTranslation(0, 0)
-            let scaleTime           = CGAffineTransformMakeScale(1, 1)
-            let translateTime       = CGAffineTransformMakeTranslation(0, 0)
-            self.homeworkButton.transform   = CGAffineTransformConcat(scaleHomework, translateHomework)
-            self.eventsButton.transform     = CGAffineTransformConcat(scaleEvents, translateEvents)
-            self.timeButton.transform       = CGAffineTransformConcat(scaleTime, translateTime)
+                let scale       = CGAffineTransformMakeScale(1, 1)
+                let translate   = CGAffineTransformMakeTranslation(0, 0)
+            self.homeworkButton.transform   = CGAffineTransformConcat(scale, translate)
         }
+           UIView.animateWithDuration(3) { () -> Void in
+            
+             let scale = CGAffineTransformMakeScale(1 , 1)
+             let translate = CGAffineTransformMakeTranslation(0, 0)
+            
+             self.eventsButton.transform = CGAffineTransformConcat(scale, translate)
+            
+            
+        }
+        
+                UIView.animateWithDuration(4) { () -> Void in
+    
+                        let scale = CGAffineTransformMakeScale(1 , 1)
+                        let translate = CGAffineTransformMakeTranslation(0, 0)
+    
+                        self.timeButton.transform = CGAffineTransformConcat(scale, translate)
+    
+    
     }
     
+    
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -39,7 +39,7 @@ class StartMenuViewController: UIViewController {
             self.thanksButton.transform   = CGAffineTransformConcat(scaleThanks, translateThanks)
             
         }
-        
+
     }
 
     override func didReceiveMemoryWarning() {
