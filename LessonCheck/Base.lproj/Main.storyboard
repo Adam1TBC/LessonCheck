@@ -113,8 +113,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="9so-R7-K2l">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0f8-ck-aJm">
-                                <rect key="frame" x="4" y="44" width="232" height="332"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0f8-ck-aJm">
+                                <rect key="frame" x="4" y="44" width="232" height="335"/>
                                 <state key="normal" backgroundImage="HomeWork">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Homework">
@@ -127,8 +127,8 @@
                                     </attributedString>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nV4-tL-W2j">
-                                <rect key="frame" x="236" y="44.5" width="135" height="331.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nV4-tL-W2j">
+                                <rect key="frame" x="236" y="44" width="135" height="335"/>
                                 <state key="normal" backgroundImage="Events">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Events">
@@ -141,8 +141,8 @@
                                     </attributedString>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rbt-Mj-enB">
-                                <rect key="frame" x="4" y="376" width="367" height="287"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rbt-Mj-enB">
+                                <rect key="frame" x="4" y="379" width="367" height="284"/>
                                 <state key="normal" backgroundImage="Timetable">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Timetable">
