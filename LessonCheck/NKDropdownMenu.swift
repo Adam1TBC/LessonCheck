@@ -290,10 +290,10 @@ public class NKDropdownMenuConfiguration {
         self.menuCellHeight = 52.0
         
         //DEFAULT INIT MENU BACKGROUND COLOR -- !!
-        self.menuCellBackgroundColor = UIColor(red: 83.0/255.0, green: 53.0/255.0, blue: 87.0/255.0, alpha: 1.0)
+        self.menuCellBackgroundColor = UIColor(red: 255.0/255.0, green: 83.0/255.0, blue: 1.0/255.0, alpha: 1.0)
         
         self.lineColor = UIColor(red: 236.0/255.0, green: 114.0/255.0, blue: 99.0/255.0, alpha: 1.0)
-        self.menuCellTextLabelColor = UIColor(red: 236.0/255.0, green: 114.0/255.0, blue: 99.0/255.0, alpha: 1.0)
+        self.menuCellTextLabelColor = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1.0)
         self.menuCellTextLabelFont = UIFont.systemFontOfSize(17.0)
         self.menuCellSelectionColor = UIColor(red: 87.0/255.0, green: 56.0/255.0, blue: 92.0/255.0, alpha: 1.0)
 
@@ -400,7 +400,7 @@ class NKDropdownMenuTableView: UITableView, UITableViewDelegate, UITableViewData
         
         //CHANGE MENU TABLEVIEW BACKGROUND COLOR HERE -- !!
         
-        self.backgroundColor = UIColor(red: 83.0/255.0, green: 53.0/255.0, blue: 87.0/255.0, alpha: 1.0)
+        self.backgroundColor = UIColor(red: 255.0/255.0, green: 83.0/255.0, blue: 1.0/255.0, alpha: 1.0)
         self.separatorStyle = UITableViewCellSeparatorStyle.None
         self.autoresizingMask = UIViewAutoresizing.FlexibleWidth
 
