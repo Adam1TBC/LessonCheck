@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NoJ-R8-A0u">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Start Menu View Controller-->
@@ -23,9 +24,36 @@
                                 <rect key="frame" x="40" y="140" width="295" height="74"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9z-cf-n9f">
-                                <rect key="frame" x="20" y="635" width="335" height="12"/>
+                                <rect key="frame" x="20" y="633" width="335" height="14"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Copyright © 2016 Adam Smirnov &amp; Nikita Vasilenko.">
+                                    <fragment content="Copyright © 2016 ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="10" name="Helvetica-Bold"/>
+                                            <integer key="NSLigature" value="0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="26.449999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="26.450000762939453">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="«Development for you» group">
+                                        <attributes>
+                                            <color key="NSColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="26.449999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="26.450000762939453">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=".">
                                         <attributes>
                                             <color key="NSColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="10" name="Helvetica-Bold"/>
@@ -63,7 +91,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKc-eA-ODk">
-                                <rect key="frame" x="40" y="446" width="295" height="69"/>
+                                <rect key="frame" x="40" y="444" width="295" height="69"/>
                                 <state key="normal" backgroundImage="Continue button"/>
                                 <connections>
                                     <segue destination="Mdp-iL-szQ" kind="modal" id="ty6-ht-6CC"/>
@@ -155,7 +183,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="UAc-dY-5XK" kind="modal" id="X2t-2M-pXM"/>
+                                    <segue destination="923-uX-2aa" kind="show" id="J1i-1I-d7P"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -210,29 +238,10 @@
             </objects>
             <point key="canvasLocation" x="1349.5" y="451.5"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Tpv-Vb-XCK">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnSwipe="YES" id="UAc-dY-5XK" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1dd-rA-5h8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="923-uX-2aa" kind="relationship" relationship="rootViewController" id="E5D-M3-Bkl"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rd1-b2-q1L" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2219.5" y="451.5"/>
-        </scene>
-        <!--Time table-->
+        <!--Timetable-->
         <scene sceneID="vOA-v0-vhR">
             <objects>
-                <viewController id="923-uX-2aa" sceneMemberID="viewController">
+                <viewController id="923-uX-2aa" customClass="TimetableController" customModule="LessonCheck" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cNy-Ys-UiG"/>
                         <viewControllerLayoutGuide type="bottom" id="7XK-Ec-a3M"/>
@@ -244,75 +253,83 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="FoW-bT-nJo">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Y6-nP-eqN">
-                                <rect key="frame" x="24" y="65" width="327" height="55"/>
-                                <state key="normal" title="monday" backgroundImage="Monday">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2I6-nD-bYV">
+                                <rect key="frame" x="20" y="75" width="335" height="50"/>
+                                <state key="normal" title="Monday" backgroundImage="Monday">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywq-bC-abs">
-                                <rect key="frame" x="24" y="135" width="327" height="55"/>
-                                <state key="normal" title="tuesday" backgroundImage="Tuesday">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTE-Eq-e6n">
+                                <rect key="frame" x="24" y="140" width="327" height="50"/>
+                                <state key="normal" title="Tuesday" backgroundImage="Tuesday">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2D-WS-a9n">
-                                <rect key="frame" x="28" y="285" width="327" height="55"/>
-                                <state key="normal" title="thursday" backgroundImage="thursday">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjx-6e-oDz">
+                                <rect key="frame" x="20" y="205" width="335" height="50"/>
+                                <state key="normal" title="Wednesday" backgroundImage="Wednesday">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVp-8E-rwv">
-                                <rect key="frame" x="28" y="435" width="327" height="55"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKA-5s-c8R">
+                                <rect key="frame" x="20" y="335" width="335" height="50"/>
+                                <state key="normal" title="friday" backgroundImage="friday">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5E4-Mw-eIf">
+                                <rect key="frame" x="24" y="400" width="327" height="50"/>
                                 <state key="normal" title="Sunday" backgroundImage="Sunday">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdg-tG-reK">
-                                <rect key="frame" x="24" y="210" width="327" height="55"/>
-                                <state key="normal" title="wednesday" backgroundImage="Wednesday">
-                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCf-a2-R1I">
-                                <rect key="frame" x="28" y="360" width="327" height="55"/>
-                                <state key="normal" title="friday" backgroundImage="friday">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTY-oc-Kgu">
+                                <rect key="frame" x="24" y="270" width="327" height="50"/>
+                                <state key="normal" title="Thursday" backgroundImage="thursday">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="iCf-a2-R1I" firstAttribute="leading" secondItem="phd-dg-JSz" secondAttribute="leading" constant="28" id="0ld-02-25H"/>
-                            <constraint firstAttribute="trailing" secondItem="iCf-a2-R1I" secondAttribute="trailing" constant="20" id="2Lv-PC-26J"/>
-                            <constraint firstItem="ywq-bC-abs" firstAttribute="leading" secondItem="phd-dg-JSz" secondAttribute="leading" constant="24" id="3x3-l2-ZYD"/>
-                            <constraint firstAttribute="trailing" secondItem="FoW-bT-nJo" secondAttribute="trailing" id="8xL-Wc-ME8"/>
-                            <constraint firstItem="qdg-tG-reK" firstAttribute="leading" secondItem="phd-dg-JSz" secondAttribute="leading" constant="24" id="Coc-QK-Yms"/>
-                            <constraint firstItem="5Y6-nP-eqN" firstAttribute="top" secondItem="cNy-Ys-UiG" secondAttribute="bottom" constant="21" id="EfZ-zc-JUW"/>
-                            <constraint firstItem="gVp-8E-rwv" firstAttribute="top" secondItem="iCf-a2-R1I" secondAttribute="bottom" constant="15" id="HyV-TJ-W9N"/>
-                            <constraint firstAttribute="trailing" secondItem="gVp-8E-rwv" secondAttribute="trailing" constant="20" id="M4U-Xg-ARR"/>
-                            <constraint firstAttribute="trailing" secondItem="qdg-tG-reK" secondAttribute="trailing" constant="24" id="Mfc-U6-R5J"/>
-                            <constraint firstItem="7XK-Ec-a3M" firstAttribute="top" secondItem="FoW-bT-nJo" secondAttribute="bottom" id="RbN-ok-cJb"/>
-                            <constraint firstItem="w2D-WS-a9n" firstAttribute="top" secondItem="qdg-tG-reK" secondAttribute="bottom" constant="15" id="RcV-gV-KUT"/>
-                            <constraint firstItem="ywq-bC-abs" firstAttribute="top" secondItem="5Y6-nP-eqN" secondAttribute="bottom" constant="10" id="TyX-6b-yUC"/>
-                            <constraint firstItem="5Y6-nP-eqN" firstAttribute="leading" secondItem="phd-dg-JSz" secondAttribute="leading" constant="24" id="Ufs-1R-GJC"/>
-                            <constraint firstItem="w2D-WS-a9n" firstAttribute="leading" secondItem="phd-dg-JSz" secondAttribute="leading" constant="28" id="cRu-dN-gKu"/>
-                            <constraint firstAttribute="trailing" secondItem="w2D-WS-a9n" secondAttribute="trailing" constant="20" id="f2l-sd-RnZ"/>
-                            <constraint firstItem="iCf-a2-R1I" firstAttribute="top" secondItem="w2D-WS-a9n" secondAttribute="bottom" constant="15" id="hor-6h-vvz"/>
-                            <constraint firstAttribute="trailing" secondItem="ywq-bC-abs" secondAttribute="trailing" constant="24" id="kM4-LR-Fb6"/>
-                            <constraint firstItem="FoW-bT-nJo" firstAttribute="top" secondItem="cNy-Ys-UiG" secondAttribute="bottom" id="nGW-Kv-p9R"/>
-                            <constraint firstItem="qdg-tG-reK" firstAttribute="top" secondItem="ywq-bC-abs" secondAttribute="bottom" constant="15" id="reF-tI-ZSX"/>
-                            <constraint firstItem="FoW-bT-nJo" firstAttribute="leading" secondItem="phd-dg-JSz" secondAttribute="leading" id="sGM-AE-bt6"/>
-                            <constraint firstItem="gVp-8E-rwv" firstAttribute="leading" secondItem="phd-dg-JSz" secondAttribute="leading" constant="28" id="swK-bF-cQ7"/>
-                            <constraint firstAttribute="trailing" secondItem="5Y6-nP-eqN" secondAttribute="trailing" constant="24" id="wdH-4H-xvD"/>
+                            <constraint firstItem="FoW-bT-nJo" firstAttribute="top" secondItem="cNy-Ys-UiG" secondAttribute="bottom" id="08i-TJ-hFi"/>
+                            <constraint firstItem="zjx-6e-oDz" firstAttribute="leading" secondItem="phd-dg-JSz" secondAttribute="leadingMargin" constant="4" id="3VE-jn-c6V"/>
+                            <constraint firstItem="2I6-nD-bYV" firstAttribute="leading" secondItem="phd-dg-JSz" secondAttribute="leadingMargin" constant="4" id="716-kV-e43"/>
+                            <constraint firstItem="FoW-bT-nJo" firstAttribute="leading" secondItem="phd-dg-JSz" secondAttribute="leading" id="HAR-N6-h4B"/>
+                            <constraint firstItem="5E4-Mw-eIf" firstAttribute="top" secondItem="RKA-5s-c8R" secondAttribute="bottom" constant="15" id="Joz-rF-A2g"/>
+                            <constraint firstAttribute="trailing" secondItem="FoW-bT-nJo" secondAttribute="trailing" id="Ln3-u8-afL"/>
+                            <constraint firstItem="bTE-Eq-e6n" firstAttribute="leading" secondItem="phd-dg-JSz" secondAttribute="leading" constant="24" id="MXC-HJ-Jzh"/>
+                            <constraint firstItem="vTY-oc-Kgu" firstAttribute="leading" secondItem="phd-dg-JSz" secondAttribute="leading" constant="24" id="NzA-8R-tpa"/>
+                            <constraint firstItem="bTE-Eq-e6n" firstAttribute="top" secondItem="2I6-nD-bYV" secondAttribute="bottom" constant="15" id="QAU-n2-0SB"/>
+                            <constraint firstItem="RKA-5s-c8R" firstAttribute="leading" secondItem="phd-dg-JSz" secondAttribute="leading" constant="20" id="SwL-WB-jss"/>
+                            <constraint firstItem="5E4-Mw-eIf" firstAttribute="leading" secondItem="phd-dg-JSz" secondAttribute="leading" constant="24" id="Szd-na-Dbc"/>
+                            <constraint firstAttribute="trailing" secondItem="bTE-Eq-e6n" secondAttribute="trailing" constant="24" id="Tss-9M-uF5"/>
+                            <constraint firstAttribute="trailing" secondItem="vTY-oc-Kgu" secondAttribute="trailing" constant="24" id="Wfq-fe-NZT"/>
+                            <constraint firstItem="zjx-6e-oDz" firstAttribute="top" secondItem="bTE-Eq-e6n" secondAttribute="bottom" constant="15" id="dmP-Ml-8fK"/>
+                            <constraint firstAttribute="trailing" secondItem="5E4-Mw-eIf" secondAttribute="trailing" constant="24" id="hoc-Fk-mDe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2I6-nD-bYV" secondAttribute="trailing" constant="4" id="l3w-gA-ojT"/>
+                            <constraint firstAttribute="trailing" secondItem="RKA-5s-c8R" secondAttribute="trailing" constant="20" id="mLD-FL-otg"/>
+                            <constraint firstItem="2I6-nD-bYV" firstAttribute="top" secondItem="cNy-Ys-UiG" secondAttribute="bottom" constant="31" id="nag-6D-Pwk"/>
+                            <constraint firstItem="vTY-oc-Kgu" firstAttribute="top" secondItem="zjx-6e-oDz" secondAttribute="bottom" constant="15" id="pwm-9z-Z1i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zjx-6e-oDz" secondAttribute="trailing" constant="4" id="wRa-ws-s6E"/>
+                            <constraint firstItem="7XK-Ec-a3M" firstAttribute="top" secondItem="FoW-bT-nJo" secondAttribute="bottom" id="weh-xj-0QL"/>
+                            <constraint firstItem="RKA-5s-c8R" firstAttribute="top" secondItem="vTY-oc-Kgu" secondAttribute="bottom" constant="15" id="wru-RF-rPx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Time table" id="jMi-9i-dqx"/>
+                    <navigationItem key="navigationItem" title="Timetable" id="jMi-9i-dqx"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="FridayButton" destination="RKA-5s-c8R" id="JbV-Cj-cOw"/>
+                        <outlet property="MondayButton" destination="2I6-nD-bYV" id="4SR-Wb-O3U"/>
+                        <outlet property="SundayButton" destination="5E4-Mw-eIf" id="wwr-o2-KY3"/>
+                        <outlet property="ThursdayButton" destination="vTY-oc-Kgu" id="dRU-os-iem"/>
+                        <outlet property="TuesdayButton" destination="bTE-Eq-e6n" id="TIq-C7-v09"/>
+                        <outlet property="WednesdayButton" destination="zjx-6e-oDz" id="eXy-dR-60c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="va8-jI-oxd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2646.5" y="451.5"/>
+            <point key="canvasLocation" x="2212.5" y="1267.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zwT-HF-LMj">
@@ -331,7 +348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4B2-yr-8aj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4161.5" y="-368.5"/>
+            <point key="canvasLocation" x="2269.5" y="6107.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5LE-8i-fse">
@@ -350,7 +367,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zue-KP-b3a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3677.5" y="-368.5"/>
+            <point key="canvasLocation" x="1785.5" y="6107.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HSr-LT-HhM">
@@ -369,7 +386,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TsQ-fB-LT8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3657.5" y="451.5"/>
+            <point key="canvasLocation" x="2269.5" y="4467.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mfz-ha-eDQ">
@@ -388,7 +405,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5WB-mv-H3D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3173.5" y="451.5"/>
+            <point key="canvasLocation" x="1785.5" y="4467.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="uCV-AT-ByP">
@@ -407,7 +424,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wV8-QT-7gk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4161.5" y="1295.5"/>
+            <point key="canvasLocation" x="2269.5" y="3655.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="z4y-2K-Z7w">
@@ -426,7 +443,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufd-0A-Ob5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3677.5" y="1295.5"/>
+            <point key="canvasLocation" x="1785.5" y="3655.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="SMy-JG-nBB">
@@ -445,7 +462,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ws-yM-tJx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3178.5" y="1275.5"/>
+            <point key="canvasLocation" x="2269.5" y="2859.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mQk-V0-9ET">
@@ -464,7 +481,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tnU-4G-fxO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2694.5" y="1275.5"/>
+            <point key="canvasLocation" x="1785.5" y="2859.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="m2G-uQ-jJE">
@@ -483,7 +500,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cpc-kH-OgR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3178.5" y="2047.5"/>
+            <point key="canvasLocation" x="2269.5" y="2071.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="a0q-fS-CbT">
@@ -502,7 +519,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0SA-CQ-eTl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2694.5" y="2047.5"/>
+            <point key="canvasLocation" x="1785.5" y="2071.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HhK-Ey-Mye">
@@ -521,7 +538,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s8n-D1-X5x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3178.5" y="-368.5"/>
+            <point key="canvasLocation" x="2269.5" y="5279.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aRO-gp-iyn">
@@ -540,7 +557,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zfs-x2-S7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2694.5" y="-368.5"/>
+            <point key="canvasLocation" x="1785.5" y="5279.5"/>
         </scene>
     </scenes>
     <resources>
@@ -548,14 +565,14 @@
         <image name="Continue button" width="311" height="69"/>
         <image name="Events" width="135" height="335"/>
         <image name="HomeWork" width="232" height="335"/>
-        <image name="Monday" width="327" height="60"/>
+        <image name="Monday" width="327" height="50"/>
         <image name="StrartMenuBackGround" width="375" height="667"/>
-        <image name="Sunday" width="327" height="60"/>
+        <image name="Sunday" width="327" height="50"/>
         <image name="THANKS" width="226" height="74"/>
         <image name="Timetable" width="367" height="287"/>
-        <image name="Tuesday" width="327" height="60"/>
-        <image name="Wednesday" width="327" height="60"/>
-        <image name="friday" width="327" height="60"/>
-        <image name="thursday" width="327" height="60"/>
+        <image name="Tuesday" width="327" height="50"/>
+        <image name="Wednesday" width="327" height="50"/>
+        <image name="friday" width="327" height="50"/>
+        <image name="thursday" width="327" height="50"/>
     </resources>
 </document>
