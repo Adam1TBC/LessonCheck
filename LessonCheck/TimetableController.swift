@@ -19,9 +19,14 @@ class TimetableController: UIViewController {
     
     
     
-    //Анимация
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(true)
+   
+    
+    
+    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
         let scaleMonday       = CGAffineTransformMakeScale(0.5, 0.5)
         let translateMonday   = CGAffineTransformMakeTranslation(-100, 0)
         let scaleTuesday     = CGAffineTransformMakeScale(0.5, 0.5)
@@ -53,11 +58,11 @@ class TimetableController: UIViewController {
             
         }
         
-            UIView.animateWithDuration(1.25) { () -> Void in
+        UIView.animateWithDuration(1.25) { () -> Void in
             
-                let scaleTuesday         = CGAffineTransformMakeScale(1, 1)
-                let translateTuesday     = CGAffineTransformMakeTranslation(0, 0)
-                self.TuesdayButton.transform   = CGAffineTransformConcat(scaleTuesday, translateTuesday)
+            let scaleTuesday         = CGAffineTransformMakeScale(1, 1)
+            let translateTuesday     = CGAffineTransformMakeTranslation(0, 0)
+            self.TuesdayButton.transform   = CGAffineTransformConcat(scaleTuesday, translateTuesday)
         }
         
         UIView.animateWithDuration(1.5) { () -> Void in
@@ -87,13 +92,8 @@ class TimetableController: UIViewController {
             let translateSunday     = CGAffineTransformMakeTranslation(0, 0)
             self.SundayButton.transform   = CGAffineTransformConcat(scaleSunday, translateSunday)
         }
+
         
-    }
-    
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
