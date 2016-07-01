@@ -94,7 +94,7 @@
                                 <rect key="frame" x="40" y="444" width="295" height="69"/>
                                 <state key="normal" backgroundImage="Continue button"/>
                                 <connections>
-                                    <segue destination="Mdp-iL-szQ" kind="modal" id="ty6-ht-6CC"/>
+                                    <segue destination="Mdp-iL-szQ" kind="presentation" id="x48-Zb-KRh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -225,6 +225,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnSwipe="YES" id="Mdp-iL-szQ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tqh-8h-16L">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
