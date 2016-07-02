@@ -90,7 +90,7 @@ class StartMenuViewController: UIViewController {
     
     func handleTap(sender: UITapGestureRecognizer) {
         if sender.state == .Ended {
-            timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(StartMenuViewController.updateProgress), userInfo: nil, repeats: true)
+            timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(StartMenuViewController.updateProgress), userInfo: nil, repeats: true)
         }
     }
     
@@ -116,6 +116,8 @@ class StartMenuViewController: UIViewController {
         
         //Вывод анимации
         if(self.progressView?.progress == 1) {
+            progressView?.hidden = true
+            progressLabel?.hidden = true
             UIView.animateWithDuration(2) { () -> Void in
                 
                 let scaleThanks           = CGAffineTransformMakeScale(1, 1)
