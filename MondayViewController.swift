@@ -31,7 +31,7 @@ class MondayViewController: UIViewController , UITableViewDelegate , UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:UITableViewCell = self.myTableView.dequeueReusableCellWithIdentifier("Cell")! as UITableViewCell
         
-        cell.textLabel?.text = items[indexPath.row]
+        
         return cell
     }
     
