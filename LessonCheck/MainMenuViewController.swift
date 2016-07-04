@@ -16,29 +16,8 @@ class MainMenuViewController: UIViewController {
     @IBOutlet weak var eventsButton: UIButton!
     @IBOutlet weak var timeButton: UIButton!
     
-    //Анимация
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(true)
-        
-        
-        
-    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        let items = ["Most Popular", "Latest", "Trending", "Nearest", "Top Picks"]
-        
-        let hamburgerMenu: NKDropdownMenu = NKDropdownMenu(items: items)
-        
-        hamburgerMenu.didSelectItemAtIndexHandler = {(indexPath: Int) -> () in
-            print("Did select item at index: \(indexPath)")
-            
-        }
-        
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: hamburgerMenu)
-        
         
         let scaleHomework       = CGAffineTransformMakeScale(0, 0)
         let translateHomework   = CGAffineTransformMakeTranslation(-300, 0)
@@ -53,12 +32,12 @@ class MainMenuViewController: UIViewController {
         timeButton.transform = CGAffineTransformConcat(scaleTime, translateTime)
         
         //Вывод анимации
-        UIView.animateWithDuration(2) { () -> Void in
+        UIView.animateWithDuration(1.75) { () -> Void in
             let scale       = CGAffineTransformMakeScale(1, 1)
             let translate   = CGAffineTransformMakeTranslation(0, 0)
             self.homeworkButton.transform   = CGAffineTransformConcat(scale, translate)
         }
-        UIView.animateWithDuration(2) { () -> Void in
+        UIView.animateWithDuration(1.75) { () -> Void in
             
             let scale = CGAffineTransformMakeScale(1 , 1)
             let translate = CGAffineTransformMakeTranslation(0, 0)
@@ -68,7 +47,7 @@ class MainMenuViewController: UIViewController {
             
         }
         
-        UIView.animateWithDuration(2.5) { () -> Void in
+        UIView.animateWithDuration(2) { () -> Void in
             
             let scale = CGAffineTransformMakeScale(1 , 1)
             let translate = CGAffineTransformMakeTranslation(0, 0)

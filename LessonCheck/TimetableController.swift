@@ -49,8 +49,6 @@ class TimetableController: UIViewController {
         //Вывод анимации
         UIView.animateWithDuration(1) { () -> Void in
             
-            
-            
             let scaleMonday           = CGAffineTransformMakeScale(1, 1)
             let translateMonday       = CGAffineTransformMakeTranslation(0, 0)
             self.MondayButton.transform = CGAffineTransformConcat(scaleMonday, translateMonday)

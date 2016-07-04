@@ -13,7 +13,8 @@ class DataBase: Object {
     
     dynamic var TeacherName = ""
     dynamic var Subject = ""
-    dynamic var Time = ""
+    dynamic var StartTime = ""
+    dynamic var FinishTime = ""
     dynamic var ClassRoom = ""
     dynamic var SubjectHomeWork = ""
     dynamic var HomeWork = ""
