@@ -26,7 +26,7 @@ class TimetableController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let scaleMonday       = CGAffineTransformMakeScale(0.5, 0.5)
+        let scale      = CGAffineTransformMakeScale(0.5, 0.5)
         let translateMonday   = CGAffineTransformMakeTranslation(-100, 0)
         let translateTuesday = CGAffineTransformMakeTranslation(-150, 0)
         let translateWednesday = CGAffineTransformMakeTranslation(-200, 0)
