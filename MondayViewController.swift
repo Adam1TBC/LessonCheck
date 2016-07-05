@@ -15,7 +15,10 @@ class MondayViewController: UIViewController , UITableViewDelegate , UITableView
     let items = ["121" , "12"]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.myTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        self.myTableView.dataSource = self
+        
         // Do any additional setup after loading the view.
     }
 

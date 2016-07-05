@@ -28,22 +28,17 @@ class TimetableController: UIViewController {
 
         let scaleMonday       = CGAffineTransformMakeScale(0.5, 0.5)
         let translateMonday   = CGAffineTransformMakeTranslation(-100, 0)
-        let scaleTuesday     = CGAffineTransformMakeScale(0.5, 0.5)
         let translateTuesday = CGAffineTransformMakeTranslation(-150, 0)
-        let scaleWednesday     = CGAffineTransformMakeScale(0.5, 0.5)
         let translateWednesday = CGAffineTransformMakeTranslation(-200, 0)
-        let scaleThursday     = CGAffineTransformMakeScale(0.5, 0.5)
         let translateThursday = CGAffineTransformMakeTranslation(-250, 0)
-        let scaleFriday     = CGAffineTransformMakeScale(0.5, 0.5)
         let translateFriday = CGAffineTransformMakeTranslation(-300, 0)
-        let scaleSunday     = CGAffineTransformMakeScale(0.5, 0.5)
         let translateSunday = CGAffineTransformMakeTranslation(-350, 0)
-        MondayButton.transform  = CGAffineTransformConcat(scaleMonday, translateMonday)
-        TuesdayButton.transform    = CGAffineTransformConcat(scaleTuesday, translateTuesday)
-        WednesdayButton.transform = CGAffineTransformConcat(scaleWednesday, translateWednesday)
-        ThursdayButton.transform = CGAffineTransformConcat(scaleThursday, translateThursday)
-        FridayButton.transform = CGAffineTransformConcat(scaleFriday, translateFriday)
-        SundayButton.transform = CGAffineTransformConcat(scaleSunday, translateSunday)
+        MondayButton.transform  = CGAffineTransformConcat(scale, translateMonday)
+        TuesdayButton.transform    = CGAffineTransformConcat(scale, translateTuesday)
+        WednesdayButton.transform = CGAffineTransformConcat(scale, translateWednesday)
+        ThursdayButton.transform = CGAffineTransformConcat(scale, translateThursday)
+        FridayButton.transform = CGAffineTransformConcat(scale, translateFriday)
+        SundayButton.transform = CGAffineTransformConcat(scale, translateSunday)
         
         
         //Вывод анимации

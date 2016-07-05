@@ -19,17 +19,15 @@ class MainMenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let scaleHomework       = CGAffineTransformMakeScale(0, 0)
+        let scale               = CGAffineTransformMakeScale(0, 0)
         let translateHomework   = CGAffineTransformMakeTranslation(-300, 0)
-        let scaleEvents         = CGAffineTransformMakeScale(0, 0)
         let translateEvents     = CGAffineTransformMakeTranslation(300, 0)
-        let scaleTime           = CGAffineTransformMakeScale(0, 0)
         let translateTime       = CGAffineTransformMakeTranslation(0, 500)
         
         
-        homeworkButton.transform = CGAffineTransformConcat(scaleHomework, translateHomework)
-        eventsButton.transform = CGAffineTransformConcat(scaleEvents, translateEvents)
-        timeButton.transform = CGAffineTransformConcat(scaleTime, translateTime)
+        homeworkButton.transform = CGAffineTransformConcat(scale, translateHomework)
+        eventsButton.transform = CGAffineTransformConcat(scale, translateEvents)
+        timeButton.transform = CGAffineTransformConcat(scale, translateTime)
         
         //Вывод анимации
         UIView.animateWithDuration(1.75) { () -> Void in
