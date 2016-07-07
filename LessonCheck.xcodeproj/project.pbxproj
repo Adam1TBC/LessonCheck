@@ -17,6 +17,7 @@
 		4D6771BC1D298F5B00C9A857 /* MondayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6771BB1D298F5B00C9A857 /* MondayViewController.swift */; };
 		A6E6B68568140D5D400E9383 /* Pods_LessonCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D631227637E1623D294637F2 /* Pods_LessonCheck.framework */; };
 		B351FD4A1D249B0E00EFDEA5 /* TimetableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B351FD491D249B0E00EFDEA5 /* TimetableController.swift */; };
+		B3B13E3A1D2E938500665637 /* MondayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B13E391D2E938500665637 /* MondayCell.swift */; };
 		B3C296CA1D201AE7001E2673 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C296C91D201AE7001E2673 /* DataBase.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		5B5BBA3A1341FCA1F64E8620 /* Pods-LessonCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LessonCheck.release.xcconfig"; path = "Pods/Target Support Files/Pods-LessonCheck/Pods-LessonCheck.release.xcconfig"; sourceTree = "<group>"; };
 		5FD4998A65E83188B68B7DE1 /* Pods-LessonCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LessonCheck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LessonCheck/Pods-LessonCheck.debug.xcconfig"; sourceTree = "<group>"; };
 		B351FD491D249B0E00EFDEA5 /* TimetableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimetableController.swift; path = LessonCheck/TimetableController.swift; sourceTree = "<group>"; };
+		B3B13E391D2E938500665637 /* MondayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MondayCell.swift; sourceTree = "<group>"; };
 		B3C296C91D201AE7001E2673 /* DataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		D631227637E1623D294637F2 /* Pods_LessonCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LessonCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,6 +100,7 @@
 		4D6771BD1D2A8A0C00C9A857 /* Days_TImeTable */ = {
 			isa = PBXGroup;
 			children = (
+				B3B13E391D2E938500665637 /* MondayCell.swift */,
 				4D6771BB1D298F5B00C9A857 /* MondayViewController.swift */,
 			);
 			name = Days_TImeTable;
@@ -246,6 +249,7 @@
 				4D665A281D233ECF00688EE3 /* MainMenuViewController.swift in Sources */,
 				4D6771BC1D298F5B00C9A857 /* MondayViewController.swift in Sources */,
 				B3C296CA1D201AE7001E2673 /* DataBase.swift in Sources */,
+				B3B13E3A1D2E938500665637 /* MondayCell.swift in Sources */,
 				4D665A261D233E5A00688EE3 /* StartMenuViewController.swift in Sources */,
 				4D20FAD51D10A6D5007CC662 /* AppDelegate.swift in Sources */,
 				4D668CFC1D24201300A1B3DB /* NKDropdownMenu.swift in Sources */,

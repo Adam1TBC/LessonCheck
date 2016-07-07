@@ -38,7 +38,11 @@ class MondayViewController: UIViewController , UITableViewDelegate , UITableView
         return cell
     }
     
-    
+    //Hide the status bar
+    override func prefersStatusBarHidden() -> Bool {
+        
+        return true
+    }
 
 
     /*

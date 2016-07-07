@@ -24,7 +24,6 @@ class MainMenuViewController: UIViewController {
         let translateEvents     = CGAffineTransformMakeTranslation(300, 0)
         let translateTime       = CGAffineTransformMakeTranslation(0, 500)
         
-        
         homeworkButton.transform = CGAffineTransformConcat(scale, translateHomework)
         eventsButton.transform = CGAffineTransformConcat(scale, translateEvents)
         timeButton.transform = CGAffineTransformConcat(scale, translateTime)
@@ -44,7 +43,6 @@ class MainMenuViewController: UIViewController {
             
             
         }
-        
         UIView.animateWithDuration(2) { () -> Void in
             
             let scale = CGAffineTransformMakeScale(1 , 1)
@@ -54,12 +52,14 @@ class MainMenuViewController: UIViewController {
             
             
         }
-
-
-        // Do any additional setup after loading the view.
     }
     
-    
+
+    //Hide the status bar
+    override func prefersStatusBarHidden() -> Bool {
+        
+        return true
+    }
 
 
     override func didReceiveMemoryWarning() {

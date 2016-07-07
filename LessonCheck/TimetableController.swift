@@ -16,12 +16,6 @@ class TimetableController: UIViewController {
     @IBOutlet weak var ThursdayButton: UIButton!
     @IBOutlet weak var FridayButton: UIButton!
     @IBOutlet weak var SundayButton: UIButton!
-    
-    
-    
-   
-    
-  
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,6 +81,12 @@ class TimetableController: UIViewController {
 
         
         // Do any additional setup after loading the view.
+    }
+    
+    //Hide the status bar
+    override func prefersStatusBarHidden() -> Bool {
+        
+        return true
     }
 
     override func didReceiveMemoryWarning() {
