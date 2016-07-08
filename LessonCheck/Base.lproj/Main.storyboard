@@ -358,7 +358,7 @@
                                         <rect key="frame" x="0.0" y="28" width="367" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Est-mw-U1W" id="auR-jM-Xhb">
-                                            <rect key="frame" x="0.0" y="0.0" width="367" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="367" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wx-8d-bXE">
@@ -505,6 +505,9 @@
                     <navigationItem key="navigationItem" title="Title" id="ech-a1-OVb">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="XHc-oz-AHl">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="8JO-P9-gGz" kind="show" id="SIn-T1-6xU"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -515,6 +518,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PGF-1a-eQj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1717.5" y="1364.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RgY-lv-8QF">
+            <objects>
+                <viewController id="8JO-P9-gGz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aNi-mo-jbb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ufg-bR-tlg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PKg-ms-z1N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="azt-3T-gVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2261.5" y="1369.5"/>
         </scene>
     </scenes>
     <resources>

@@ -13,7 +13,6 @@
 		4D20FADF1D10A6D5007CC662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D20FADD1D10A6D5007CC662 /* LaunchScreen.storyboard */; };
 		4D665A261D233E5A00688EE3 /* StartMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D665A251D233E5A00688EE3 /* StartMenuViewController.swift */; };
 		4D665A281D233ECF00688EE3 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D665A271D233ECF00688EE3 /* MainMenuViewController.swift */; };
-		4D668CFC1D24201300A1B3DB /* NKDropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D668CFB1D24201300A1B3DB /* NKDropdownMenu.swift */; };
 		4D6771BC1D298F5B00C9A857 /* MondayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6771BB1D298F5B00C9A857 /* MondayViewController.swift */; };
 		A6E6B68568140D5D400E9383 /* Pods_LessonCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D631227637E1623D294637F2 /* Pods_LessonCheck.framework */; };
 		B351FD4A1D249B0E00EFDEA5 /* TimetableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B351FD491D249B0E00EFDEA5 /* TimetableController.swift */; };
@@ -30,7 +29,6 @@
 		4D20FAE01D10A6D5007CC662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D665A251D233E5A00688EE3 /* StartMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartMenuViewController.swift; path = LessonCheck/StartMenuViewController.swift; sourceTree = "<group>"; };
 		4D665A271D233ECF00688EE3 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuViewController.swift; path = LessonCheck/MainMenuViewController.swift; sourceTree = "<group>"; };
-		4D668CFB1D24201300A1B3DB /* NKDropdownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKDropdownMenu.swift; sourceTree = "<group>"; };
 		4D6771BB1D298F5B00C9A857 /* MondayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MondayViewController.swift; sourceTree = "<group>"; };
 		5B5BBA3A1341FCA1F64E8620 /* Pods-LessonCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LessonCheck.release.xcconfig"; path = "Pods/Target Support Files/Pods-LessonCheck/Pods-LessonCheck.release.xcconfig"; sourceTree = "<group>"; };
 		5FD4998A65E83188B68B7DE1 /* Pods-LessonCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LessonCheck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LessonCheck/Pods-LessonCheck.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 				B3C296C91D201AE7001E2673 /* DataBase.swift */,
 				4D20FAD41D10A6D5007CC662 /* AppDelegate.swift */,
 				4D20FAD81D10A6D5007CC662 /* Main.storyboard */,
-				4D668CFB1D24201300A1B3DB /* NKDropdownMenu.swift */,
 				4D20FADB1D10A6D5007CC662 /* Assets.xcassets */,
 				4D20FADD1D10A6D5007CC662 /* LaunchScreen.storyboard */,
 				4D20FAE01D10A6D5007CC662 /* Info.plist */,
@@ -130,12 +127,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D20FAE31D10A6D5007CC662 /* Build configuration list for PBXNativeTarget "LessonCheck" */;
 			buildPhases = (
+				43826392D677D56FAA84AE8A /* 📦 Check Pods Manifest.lock */,
 				0723891657FC93EA7AEFAF30 /* [CP] Check Pods Manifest.lock */,
 				4D20FACD1D10A6D5007CC662 /* Sources */,
 				4D20FACE1D10A6D5007CC662 /* Frameworks */,
 				4D20FACF1D10A6D5007CC662 /* Resources */,
 				FBFFE40F16C498B91FA849A5 /* [CP] Embed Pods Frameworks */,
 				6738C1A655AD4F24DB7B3353 /* [CP] Copy Pods Resources */,
+				2066AEB58C5E06A7C84F7698 /* 📦 Embed Pods Frameworks */,
+				82739EDD6FBF00F7265AA485 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,6 +209,36 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		2066AEB58C5E06A7C84F7698 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LessonCheck/Pods-LessonCheck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43826392D677D56FAA84AE8A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		6738C1A655AD4F24DB7B3353 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,6 +247,21 @@
 			inputPaths = (
 			);
 			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LessonCheck/Pods-LessonCheck-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82739EDD6FBF00F7265AA485 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,7 +297,6 @@
 				B3B13E3A1D2E938500665637 /* MondayCell.swift in Sources */,
 				4D665A261D233E5A00688EE3 /* StartMenuViewController.swift in Sources */,
 				4D20FAD51D10A6D5007CC662 /* AppDelegate.swift in Sources */,
-				4D668CFC1D24201300A1B3DB /* NKDropdownMenu.swift in Sources */,
 				B351FD4A1D249B0E00EFDEA5 /* TimetableController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
