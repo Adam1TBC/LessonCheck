@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import RealmSwift
 
 class MondayViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
 
     @IBOutlet weak var myTableView: UITableView!
     
-    let items = ["121" , "12"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,7 +29,7 @@ class MondayViewController: UIViewController , UITableViewDelegate , UITableView
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        return 1
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -36,6 +37,7 @@ class MondayViewController: UIViewController , UITableViewDelegate , UITableView
         
         
         return cell
+        
     }
     
     //Hide the status bar

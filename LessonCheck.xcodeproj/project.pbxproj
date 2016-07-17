@@ -71,8 +71,8 @@
 		4D20FAD31D10A6D5007CC662 /* LessonCheck */ = {
 			isa = PBXGroup;
 			children = (
+				B33E7C901D35C95000823936 /* data */,
 				4D6771B51D297D1D00C9A857 /* Controllers */,
-				B3C296C91D201AE7001E2673 /* DataBase.swift */,
 				4D20FAD41D10A6D5007CC662 /* AppDelegate.swift */,
 				4D20FAD81D10A6D5007CC662 /* Main.storyboard */,
 				4D20FADB1D10A6D5007CC662 /* Assets.xcassets */,
@@ -110,6 +110,14 @@
 				5B5BBA3A1341FCA1F64E8620 /* Pods-LessonCheck.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B33E7C901D35C95000823936 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B3C296C91D201AE7001E2673 /* DataBase.swift */,
+			);
+			name = data;
 			sourceTree = "<group>";
 		};
 		EFAC16B75F2E172369BB15B8 /* Frameworks */ = {
