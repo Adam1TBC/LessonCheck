@@ -27,12 +27,13 @@ class TimetableController: UIViewController {
         let translateThursday = CGAffineTransformMakeTranslation(-250, 0)
         let translateFriday = CGAffineTransformMakeTranslation(-300, 0)
         let translateSunday = CGAffineTransformMakeTranslation(-350, 0)
-        MondayButton.transform  = CGAffineTransformConcat(scale, translateMonday)
-        TuesdayButton.transform    = CGAffineTransformConcat(scale, translateTuesday)
-        WednesdayButton.transform = CGAffineTransformConcat(scale, translateWednesday)
-        ThursdayButton.transform = CGAffineTransformConcat(scale, translateThursday)
-        FridayButton.transform = CGAffineTransformConcat(scale, translateFriday)
-        SundayButton.transform = CGAffineTransformConcat(scale, translateSunday)
+        
+            MondayButton.transform  = CGAffineTransformConcat(scale, translateMonday)
+            TuesdayButton.transform    = CGAffineTransformConcat(scale, translateTuesday)
+            WednesdayButton.transform = CGAffineTransformConcat(scale, translateWednesday)
+            ThursdayButton.transform = CGAffineTransformConcat(scale, translateThursday)
+            FridayButton.transform = CGAffineTransformConcat(scale, translateFriday)
+            SundayButton.transform = CGAffineTransformConcat(scale, translateSunday)
         
         
         //Вывод анимации

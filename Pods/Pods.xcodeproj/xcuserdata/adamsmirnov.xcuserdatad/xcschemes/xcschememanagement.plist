@@ -4,31 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>HamburgerButton-HamburgerButton.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>HamburgerButton.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>HamburgerMenu-HamburgerMenu.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>HamburgerMenu.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>NKDropdownMenu.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-LessonCheck.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,72 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0D129A612F0BEBD455C3EC391525144A</key>
+		<key>74D0667CD489147DD44CE9F23CDB036C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2477A5BC5E7A20D1DD79C793B93CDA48</key>
+		<key>7DA295C524A90D07E942892A9509FC0D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2E3EDE808A1D4BCEE847B60D8554A130</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3B2D05319F397643045DA30375ABCA15</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>44BA55F85424503EB0BBE3D78A5DB46A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4957EA3B2B9314B4D30C81C417531BBB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>82F896B593A9CA2774CCC3B6C01DA264</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A8459561FBAD2A2867BA63984B80A72A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>ACDCD1E3473B4028F55B158E031CEB92</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B81B4D4AD67A4D2152ECFFC533DB1A82</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B84936B3FE16344AF4D0565B3F4655B2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C7901C5BD4CCAE95C69318447F6AABED</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DC2E4CA7BCA07E6089617F1A13099559</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FBF38A1851F55B0EA77F2EB1910298DA</key>
+		<key>B6B8BC3AEEFEF4F412902950DA60384E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

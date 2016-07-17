@@ -1,6 +1,0 @@
-framework module NKDropdownMenu {
-  umbrella header "NKDropdownMenu-umbrella.h"
-
-  export *
-  module * { export * }
-}

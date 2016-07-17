@@ -135,7 +135,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D20FAE31D10A6D5007CC662 /* Build configuration list for PBXNativeTarget "LessonCheck" */;
 			buildPhases = (
-				43826392D677D56FAA84AE8A /* 📦 Check Pods Manifest.lock */,
+				43826392D677D56FAA84AE8A /* [CP] Check Pods Manifest.lock */,
 				0723891657FC93EA7AEFAF30 /* [CP] Check Pods Manifest.lock */,
 				4D20FACD1D10A6D5007CC662 /* Sources */,
 				4D20FACE1D10A6D5007CC662 /* Frameworks */,
@@ -232,14 +232,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LessonCheck/Pods-LessonCheck-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		43826392D677D56FAA84AE8A /* 📦 Check Pods Manifest.lock */ = {
+		43826392D677D56FAA84AE8A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
