@@ -16,6 +16,18 @@ class TimetableController: UIViewController {
     @IBOutlet weak var ThursdayButton: UIButton!
     @IBOutlet weak var FridayButton: UIButton!
     @IBOutlet weak var SundayButton: UIButton!
+    
+    
+    //animation
+    func animation(time: NSTimeInterval, button: UIButton) {
+        
+        UIView.animateWithDuration(time) { () -> Void in
+            
+            let scale           = CGAffineTransformMakeScale(1, 1)
+            let translate      = CGAffineTransformMakeTranslation(0, 0)
+            button.transform = CGAffineTransformConcat(scale, translate)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,53 +47,15 @@ class TimetableController: UIViewController {
             FridayButton.transform = CGAffineTransformConcat(scale, translateFriday)
             SundayButton.transform = CGAffineTransformConcat(scale, translateSunday)
         
-        
         //Вывод анимации
-        UIView.animateWithDuration(1) { () -> Void in
-            
-            let scaleMonday           = CGAffineTransformMakeScale(1, 1)
-            let translateMonday       = CGAffineTransformMakeTranslation(0, 0)
-            self.MondayButton.transform = CGAffineTransformConcat(scaleMonday, translateMonday)
-            
-        }
+        animation(1, button: MondayButton)
+        animation(1.25, button: TuesdayButton)
+        animation(1.5, button: WednesdayButton)
+        animation(1.75, button: ThursdayButton)
+        animation(2, button: FridayButton)
+        animation(2.25, button: SundayButton)
         
-        UIView.animateWithDuration(1.25) { () -> Void in
-            
-            let scaleTuesday         = CGAffineTransformMakeScale(1, 1)
-            let translateTuesday     = CGAffineTransformMakeTranslation(0, 0)
-            self.TuesdayButton.transform   = CGAffineTransformConcat(scaleTuesday, translateTuesday)
-        }
         
-        UIView.animateWithDuration(1.5) { () -> Void in
-            
-            let scaleWednesday         = CGAffineTransformMakeScale(1, 1)
-            let translateWednesday     = CGAffineTransformMakeTranslation(0, 0)
-            self.WednesdayButton.transform   = CGAffineTransformConcat(scaleWednesday, translateWednesday)
-        }
-        
-        UIView.animateWithDuration(1.75) { () -> Void in
-            
-            let scaleThursday         = CGAffineTransformMakeScale(1, 1)
-            let translateThursday     = CGAffineTransformMakeTranslation(0, 0)
-            self.ThursdayButton.transform   = CGAffineTransformConcat(scaleThursday, translateThursday)
-        }
-        
-        UIView.animateWithDuration(2) { () -> Void in
-            
-            let scaleFriday         = CGAffineTransformMakeScale(1, 1)
-            let translateFriday     = CGAffineTransformMakeTranslation(0, 0)
-            self.FridayButton.transform   = CGAffineTransformConcat(scaleFriday, translateFriday)
-        }
-        
-        UIView.animateWithDuration(2.25) { () -> Void in
-            
-            let scaleSunday         = CGAffineTransformMakeScale(1, 1)
-            let translateSunday     = CGAffineTransformMakeTranslation(0, 0)
-            self.SundayButton.transform   = CGAffineTransformConcat(scaleSunday, translateSunday)
-        }
-
-        
-        // Do any additional setup after loading the view.
     }
     
     //Hide the status bar

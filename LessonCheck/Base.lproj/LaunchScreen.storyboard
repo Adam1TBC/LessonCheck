@@ -86,14 +86,23 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="THANKS" translatesAutoresizingMaskIntoConstraints="NO" id="A2w-PN-LyY">
-                                <rect key="frame" x="40" y="120" width="295" height="74"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="efo-vS-5dz">
+                                <rect key="frame" x="20" y="165" width="335" height="42"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="LESSON CHECK">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="36" name="Helvetica-Oblique"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="A2w-PN-LyY" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="120" id="49t-hQ-XWO"/>
-                            <constraint firstAttribute="trailing" secondItem="A2w-PN-LyY" secondAttribute="trailing" constant="40" id="Bxx-sb-bXi"/>
+                            <constraint firstItem="efo-vS-5dz" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" id="8Kc-pA-Kjw"/>
                             <constraint firstAttribute="trailing" secondItem="lt0-c1-8xd" secondAttribute="trailing" id="DyX-uA-cOL"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="lt0-c1-8xd" secondAttribute="bottom" constant="8" id="Kbd-WH-xPA"/>
                             <constraint firstItem="lt0-c1-8xd" firstAttribute="top" secondItem="Z7P-Az-MDs" secondAttribute="bottom" constant="3" id="MEq-Z4-CUd"/>
@@ -101,8 +110,9 @@
                             <constraint firstAttribute="trailing" secondItem="Mv8-Yu-eOZ" secondAttribute="trailing" id="Q8C-rQ-bsn"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Mv8-Yu-eOZ" secondAttribute="bottom" id="QR6-wL-otc"/>
                             <constraint firstItem="Mv8-Yu-eOZ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="YQh-ny-3gQ"/>
-                            <constraint firstItem="A2w-PN-LyY" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="40" id="cca-BP-Eg0"/>
+                            <constraint firstItem="efo-vS-5dz" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="165" id="azw-Hc-esz"/>
                             <constraint firstItem="Z7P-Az-MDs" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" id="fQN-Ts-sPq"/>
+                            <constraint firstAttribute="trailing" secondItem="efo-vS-5dz" secondAttribute="trailing" constant="20" id="kxB-4C-Qod"/>
                             <constraint firstItem="Mv8-Yu-eOZ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="soL-Tq-ZBd"/>
                             <constraint firstAttribute="trailing" secondItem="Z7P-Az-MDs" secondAttribute="trailing" constant="20" id="vLk-9I-r5o"/>
                         </constraints>
@@ -119,6 +129,5 @@
     </scenes>
     <resources>
         <image name="StrartMenuBackGround" width="375" height="667"/>
-        <image name="THANKS" width="226" height="74"/>
     </resources>
 </document>

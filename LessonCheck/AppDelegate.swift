@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import NKDropdownMenu
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
