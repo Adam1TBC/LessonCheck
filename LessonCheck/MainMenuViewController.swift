@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import RealmSwift
 
 
 class MainMenuViewController: UIViewController {
@@ -15,10 +15,17 @@ class MainMenuViewController: UIViewController {
     @IBOutlet weak var homeworkButton: UIButton!
     @IBOutlet weak var eventsButton: UIButton!
     @IBOutlet weak var timeButton: UIButton!
+	
+	let realm = try! Realm()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+		
+		let database = realm.objects(DataBase)
+		try! realm.write({
+			realm.add(database)
+		})
+		
         let scale               = CGAffineTransformMakeScale(0, 0)
         let translateHomework   = CGAffineTransformMakeTranslation(-300, 0)
         let translateEvents     = CGAffineTransformMakeTranslation(300, 0)

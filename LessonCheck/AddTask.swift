@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import RealmSwift
 class AddTask: UITableViewController {
     
     
@@ -15,14 +15,38 @@ class AddTask: UITableViewController {
     @IBOutlet weak var endLabel: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var datePickerEnd: UIDatePicker!
-    
-    
-    
-    
-    
-
+	@IBOutlet weak var SubjectTextField: UITextField!
+	@IBOutlet weak var teacherTextField: UITextField!
+	@IBOutlet weak var classroomTextField: UITextField!
+	
+	
+	
+	let realm  = try! Realm()
+	
+	@IBAction func addButtonAction(sender: AnyObject) {
+		let database = DataBase()
+		
+		database.Subject = SubjectTextField.text!
+		database.TeacherName = teacherTextField.text!
+		database.ClassRoom = classroomTextField.text!
+		database.StartTime = startLabel.text!
+		database.FinishTime = endLabel.text!
+		
+		
+		
+		
+		try! realm.write({
+			realm.add(database)
+		})
+		
+		let alert = UIAlertController(title: "Внимание" , message: "Вы успешно добавили урок.", preferredStyle: UIAlertControllerStyle.Alert)
+		alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+		self.presentViewController(alert , animated: true , completion: nil)
+	}
     override func viewDidLoad() {
         super.viewDidLoad()
+		print(Realm.Configuration.defaultConfiguration.description)
+		
         
         datePickerChanged(startLabel, picker: datePicker, end: endLabel, endPicker: datePickerEnd)
     }

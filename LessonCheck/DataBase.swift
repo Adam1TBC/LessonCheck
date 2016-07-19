@@ -22,9 +22,6 @@ class DataBase: Object {
     dynamic var EventTime = ""
     
     
-    let author = DataBase()
-    
-    
 // Specify properties to ignore (Realm won't persist these)
     
 //  override static func ignoredProperties() -> [String] {
