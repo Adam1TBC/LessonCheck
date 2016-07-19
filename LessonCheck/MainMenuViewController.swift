@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import KRProgressHUD
 
 
 class MainMenuViewController: UIViewController {
@@ -21,10 +22,8 @@ class MainMenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-		let database = realm.objects(DataBase)
-		try! realm.write({
-			realm.add(database)
-		})
+		
+		
 		
         let scale               = CGAffineTransformMakeScale(0, 0)
         let translateHomework   = CGAffineTransformMakeTranslation(-300, 0)
@@ -60,7 +59,27 @@ class MainMenuViewController: UIViewController {
             
         }
     }
-    
+	
+	class func show(
+		progressHUDStyle progressStyle :KRProgressHUDStyle? = nil,
+		maskType type:KRProgressHUDMaskType? = nil,
+		activityIndicatorStyle indicatorStyle :KRProgressHUDActivityIndicatorStyle? = nil,
+		message :String? = nil,
+		font :UIFont? = nil,
+		image :UIImage? = nil,
+		completion: (()->())? = nil
+	)
+	{
+	// Example
+	}
+	
+	
+	class func updateLabel(text: String){
+		
+	}
+	
+	
+
 
     //Hide the status bar
     override func prefersStatusBarHidden() -> Bool {

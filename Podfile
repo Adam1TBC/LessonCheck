@@ -7,6 +7,7 @@ target 'LessonCheck' do
 
   # Pods for LessonCheck
     pod'RealmSwift'
+	pod'KRProgressHUD'
     
 
 end

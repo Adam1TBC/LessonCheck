@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>KRProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-LessonCheck.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>74D0667CD489147DD44CE9F23CDB036C</key>
+		<key>002A79E870219FA26D9FCCF693E84BD3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7DA295C524A90D07E942892A9509FC0D</key>
+		<key>5211743F271BBECC16BE96AF1CE3DD04</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B6B8BC3AEEFEF4F412902950DA60384E</key>
+		<key>A70D30FDFEF664AE0F15DE8BF87178E0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ECD9114090614EC5AA7DAA2D60E3B0BE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

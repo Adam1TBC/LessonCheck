@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import KRProgressHUD
 class AddTask: UITableViewController {
     
     
@@ -35,10 +36,12 @@ class AddTask: UITableViewController {
 		do {
 			_ = try Realm()
 		} catch _ as NSError {
-			let alert =  UIAlertController(title: "Внимание", message: "Что-то пошло не так", preferredStyle: UIAlertControllerStyle.Alert)
-			alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-			self.presentViewController(alert, animated: true, completion: nil)
-		}
+			KRProgressHUD.showError(progressHUDStyle: .Black , message: "Произошла ошибка")
+			}
+			
+			
+			
+	
 
 		
 		
@@ -46,9 +49,12 @@ class AddTask: UITableViewController {
 			realm.add(database)
 		})
 		
-		let alert = UIAlertController(title: "Внимание" , message: "Вы успешно добавили урок.", preferredStyle: UIAlertControllerStyle.Alert)
-		alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-		self.presentViewController(alert , animated: true , completion: nil)
+		KRProgressHUD.showSuccess(progressHUDStyle: .Black, message: "Success")
+		
+
+
+		
+	
 	}
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -101,7 +107,20 @@ class AddTask: UITableViewController {
         
         return true
     }
-    
+	
+	
+	class func show(
+		progressHUDStyle progressStyle :KRProgressHUDStyle? = nil,
+		                 maskType type:KRProgressHUDMaskType? = nil,
+		                          activityIndicatorStyle indicatorStyle :KRProgressHUDActivityIndicatorStyle? = nil,
+		                                                 message :String? = nil,
+		                                                 font :UIFont? = nil,
+		                                                 image :UIImage? = nil,
+		                                                 completion: (()->())? = nil
+		)
+	{
+		// Example
+	}
     
     
     

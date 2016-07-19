@@ -13,11 +13,11 @@ class MondayTableViewController: UITableViewController {
 	
 	
 	let realm = try! Realm()
-	var refresh: UIRefreshControl!
+	var refresh: UIRefreshControl! // Refresh Controll
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
+		//Refresh
 		refresh = UIRefreshControl()
 		refresh.attributedTitle = NSAttributedString(string: "Pull to refresh")
 		refresh.addTarget(self, action: #selector(update), forControlEvents: .ValueChanged)
@@ -32,7 +32,7 @@ class MondayTableViewController: UITableViewController {
 		
 		tableView.reloadData()
 	}
-	
+	//Func Update / Refresh
 	func update(){
 		tableView.reloadData()
 		refresh.endRefreshing()
@@ -71,12 +71,12 @@ class MondayTableViewController: UITableViewController {
 	override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
 		
 		let database = realm.objects(DataBase)
-		
+		//Realm Delete
 		if editingStyle == .Delete {
 			try! realm.write({
 				realm.delete(database[indexPath.row])
 			})
-			tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+			tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade) // Animation on Delete
 			
 		}
 		

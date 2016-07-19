@@ -1,4 +1,5 @@
 PODS:
+  - KRProgressHUD (1.4.2)
   - Realm (1.0.0):
     - Realm/Headers (= 1.0.0)
   - Realm/Headers (1.0.0)
@@ -6,12 +7,14 @@ PODS:
     - Realm (= 1.0.0)
 
 DEPENDENCIES:
+  - KRProgressHUD
   - RealmSwift
 
 SPEC CHECKSUMS:
+  KRProgressHUD: acf30dc6692a6eba2b01104149874919897cc2bc
   Realm: e15cd8e7c11d3e576f628ba0b7cb855269b4991c
   RealmSwift: 3229306d020d96f83b335f87a0dcbf2cef0e6a2b
 
-PODFILE CHECKSUM: 5d4907976bda10345822347c2b122273e2914346
+PODFILE CHECKSUM: 7c808f41afd8f6708f808ba30539ed0904b38ec9
 
 COCOAPODS: 1.0.1
