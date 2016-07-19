@@ -32,7 +32,14 @@ class AddTask: UITableViewController {
 		database.StartTime = startLabel.text!
 		database.FinishTime = endLabel.text!
 		
-		
+		do {
+			_ = try Realm()
+		} catch _ as NSError {
+			let alert =  UIAlertController(title: "Внимание", message: "Что-то пошло не так", preferredStyle: UIAlertControllerStyle.Alert)
+			alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+			self.presentViewController(alert, animated: true, completion: nil)
+		}
+
 		
 		
 		try! realm.write({
