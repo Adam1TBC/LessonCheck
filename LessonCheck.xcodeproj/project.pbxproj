@@ -11,6 +11,21 @@
 		4D20FADA1D10A6D5007CC662 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D20FAD81D10A6D5007CC662 /* Main.storyboard */; };
 		4D20FADC1D10A6D5007CC662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D20FADB1D10A6D5007CC662 /* Assets.xcassets */; };
 		4D20FADF1D10A6D5007CC662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D20FADD1D10A6D5007CC662 /* LaunchScreen.storyboard */; };
+		4D61AD641D3F8EEC00C079E2 /* ThuesDayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D61AD631D3F8EEC00C079E2 /* ThuesDayTableViewController.swift */; };
+		4D61AD661D3F8F2C00C079E2 /* AddTaskThuesDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D61AD651D3F8F2C00C079E2 /* AddTaskThuesDay.swift */; };
+		4D61AD681D3F8F4100C079E2 /* ThuesdayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D61AD671D3F8F4100C079E2 /* ThuesdayCell.swift */; };
+		4D61AD6A1D3F900700C079E2 /* WednesdayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D61AD691D3F900700C079E2 /* WednesdayCell.swift */; };
+		4D61AD6C1D3F902F00C079E2 /* WednesdayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D61AD6B1D3F902F00C079E2 /* WednesdayTableViewController.swift */; };
+		4D61AD6E1D3F903D00C079E2 /* AddTaskWednesday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D61AD6D1D3F903D00C079E2 /* AddTaskWednesday.swift */; };
+		4D61AD701D3F910300C079E2 /* ThursdayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D61AD6F1D3F910300C079E2 /* ThursdayTableViewController.swift */; };
+		4D61AD721D3F912300C079E2 /* AddTaskThursday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D61AD711D3F912300C079E2 /* AddTaskThursday.swift */; };
+		4D61AD741D3F913A00C079E2 /* ThursdayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D61AD731D3F913A00C079E2 /* ThursdayCell.swift */; };
+		4D61AD761D3F914A00C079E2 /* FridayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D61AD751D3F914A00C079E2 /* FridayCell.swift */; };
+		4D61AD781D3F916000C079E2 /* FridayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D61AD771D3F916000C079E2 /* FridayTableViewController.swift */; };
+		4D61AD7A1D3F917400C079E2 /* AddTaskFriday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D61AD791D3F917400C079E2 /* AddTaskFriday.swift */; };
+		4D61AD7C1D3F91C700C079E2 /* AddTaskSunday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D61AD7B1D3F91C700C079E2 /* AddTaskSunday.swift */; };
+		4D61AD7E1D3F91D700C079E2 /* SundayTableVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D61AD7D1D3F91D700C079E2 /* SundayTableVIewController.swift */; };
+		4D61AD801D3F91F600C079E2 /* SundayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D61AD7F1D3F91F600C079E2 /* SundayCell.swift */; };
 		4D665A281D233ECF00688EE3 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D665A271D233ECF00688EE3 /* MainMenuViewController.swift */; };
 		4D81692C1D3D96F300B5DD63 /* MondayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D81692B1D3D96F300B5DD63 /* MondayTableViewController.swift */; };
 		A6E6B68568140D5D400E9383 /* Pods_LessonCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D631227637E1623D294637F2 /* Pods_LessonCheck.framework */; };
@@ -27,6 +42,21 @@
 		4D20FADB1D10A6D5007CC662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D20FADE1D10A6D5007CC662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D20FAE01D10A6D5007CC662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D61AD631D3F8EEC00C079E2 /* ThuesDayTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThuesDayTableViewController.swift; sourceTree = "<group>"; };
+		4D61AD651D3F8F2C00C079E2 /* AddTaskThuesDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskThuesDay.swift; sourceTree = "<group>"; };
+		4D61AD671D3F8F4100C079E2 /* ThuesdayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThuesdayCell.swift; sourceTree = "<group>"; };
+		4D61AD691D3F900700C079E2 /* WednesdayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WednesdayCell.swift; sourceTree = "<group>"; };
+		4D61AD6B1D3F902F00C079E2 /* WednesdayTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WednesdayTableViewController.swift; sourceTree = "<group>"; };
+		4D61AD6D1D3F903D00C079E2 /* AddTaskWednesday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskWednesday.swift; sourceTree = "<group>"; };
+		4D61AD6F1D3F910300C079E2 /* ThursdayTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThursdayTableViewController.swift; sourceTree = "<group>"; };
+		4D61AD711D3F912300C079E2 /* AddTaskThursday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskThursday.swift; sourceTree = "<group>"; };
+		4D61AD731D3F913A00C079E2 /* ThursdayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThursdayCell.swift; sourceTree = "<group>"; };
+		4D61AD751D3F914A00C079E2 /* FridayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FridayCell.swift; sourceTree = "<group>"; };
+		4D61AD771D3F916000C079E2 /* FridayTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FridayTableViewController.swift; sourceTree = "<group>"; };
+		4D61AD791D3F917400C079E2 /* AddTaskFriday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskFriday.swift; sourceTree = "<group>"; };
+		4D61AD7B1D3F91C700C079E2 /* AddTaskSunday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskSunday.swift; sourceTree = "<group>"; };
+		4D61AD7D1D3F91D700C079E2 /* SundayTableVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SundayTableVIewController.swift; sourceTree = "<group>"; };
+		4D61AD7F1D3F91F600C079E2 /* SundayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SundayCell.swift; sourceTree = "<group>"; };
 		4D665A271D233ECF00688EE3 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuViewController.swift; path = LessonCheck/MainMenuViewController.swift; sourceTree = "<group>"; };
 		4D81692B1D3D96F300B5DD63 /* MondayTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MondayTableViewController.swift; sourceTree = "<group>"; };
 		5B5BBA3A1341FCA1F64E8620 /* Pods-LessonCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LessonCheck.release.xcconfig"; path = "Pods/Target Support Files/Pods-LessonCheck/Pods-LessonCheck.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +112,66 @@
 			path = LessonCheck;
 			sourceTree = "<group>";
 		};
+		4D61AD5D1D3F8DD000C079E2 /* Понедельник */ = {
+			isa = PBXGroup;
+			children = (
+				B3B13E391D2E938500665637 /* MondayCell.swift */,
+				B39A74D51D3CDEEA0051BB6B /* AddTask.swift */,
+				4D81692B1D3D96F300B5DD63 /* MondayTableViewController.swift */,
+			);
+			name = "Понедельник";
+			sourceTree = "<group>";
+		};
+		4D61AD5E1D3F8E4000C079E2 /* Суббота */ = {
+			isa = PBXGroup;
+			children = (
+				4D61AD7B1D3F91C700C079E2 /* AddTaskSunday.swift */,
+				4D61AD7D1D3F91D700C079E2 /* SundayTableVIewController.swift */,
+				4D61AD7F1D3F91F600C079E2 /* SundayCell.swift */,
+			);
+			name = "Суббота";
+			sourceTree = "<group>";
+		};
+		4D61AD5F1D3F8E4300C079E2 /* Пятница */ = {
+			isa = PBXGroup;
+			children = (
+				4D61AD751D3F914A00C079E2 /* FridayCell.swift */,
+				4D61AD771D3F916000C079E2 /* FridayTableViewController.swift */,
+				4D61AD791D3F917400C079E2 /* AddTaskFriday.swift */,
+			);
+			name = "Пятница";
+			sourceTree = "<group>";
+		};
+		4D61AD601D3F8E4500C079E2 /* Четверг */ = {
+			isa = PBXGroup;
+			children = (
+				4D61AD6F1D3F910300C079E2 /* ThursdayTableViewController.swift */,
+				4D61AD711D3F912300C079E2 /* AddTaskThursday.swift */,
+				4D61AD731D3F913A00C079E2 /* ThursdayCell.swift */,
+			);
+			name = "Четверг";
+			sourceTree = "<group>";
+		};
+		4D61AD611D3F8E4800C079E2 /* Среда */ = {
+			isa = PBXGroup;
+			children = (
+				4D61AD691D3F900700C079E2 /* WednesdayCell.swift */,
+				4D61AD6B1D3F902F00C079E2 /* WednesdayTableViewController.swift */,
+				4D61AD6D1D3F903D00C079E2 /* AddTaskWednesday.swift */,
+			);
+			name = "Среда";
+			sourceTree = "<group>";
+		};
+		4D61AD621D3F8E4C00C079E2 /* Вторник */ = {
+			isa = PBXGroup;
+			children = (
+				4D61AD631D3F8EEC00C079E2 /* ThuesDayTableViewController.swift */,
+				4D61AD651D3F8F2C00C079E2 /* AddTaskThuesDay.swift */,
+				4D61AD671D3F8F4100C079E2 /* ThuesdayCell.swift */,
+			);
+			name = "Вторник";
+			sourceTree = "<group>";
+		};
 		4D6771B51D297D1D00C9A857 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,9 +186,12 @@
 		4D6771BD1D2A8A0C00C9A857 /* Days_TImeTable */ = {
 			isa = PBXGroup;
 			children = (
-				4D81692B1D3D96F300B5DD63 /* MondayTableViewController.swift */,
-				B39A74D51D3CDEEA0051BB6B /* AddTask.swift */,
-				B3B13E391D2E938500665637 /* MondayCell.swift */,
+				4D61AD5D1D3F8DD000C079E2 /* Понедельник */,
+				4D61AD621D3F8E4C00C079E2 /* Вторник */,
+				4D61AD611D3F8E4800C079E2 /* Среда */,
+				4D61AD601D3F8E4500C079E2 /* Четверг */,
+				4D61AD5F1D3F8E4300C079E2 /* Пятница */,
+				4D61AD5E1D3F8E4000C079E2 /* Суббота */,
 			);
 			name = Days_TImeTable;
 			sourceTree = "<group>";
@@ -299,12 +392,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D61AD6E1D3F903D00C079E2 /* AddTaskWednesday.swift in Sources */,
+				4D61AD741D3F913A00C079E2 /* ThursdayCell.swift in Sources */,
+				4D61AD701D3F910300C079E2 /* ThursdayTableViewController.swift in Sources */,
 				4D665A281D233ECF00688EE3 /* MainMenuViewController.swift in Sources */,
 				B3C296CA1D201AE7001E2673 /* DataBase.swift in Sources */,
 				B3B13E3A1D2E938500665637 /* MondayCell.swift in Sources */,
+				4D61AD7A1D3F917400C079E2 /* AddTaskFriday.swift in Sources */,
 				B39A74D61D3CDEEA0051BB6B /* AddTask.swift in Sources */,
+				4D61AD681D3F8F4100C079E2 /* ThuesdayCell.swift in Sources */,
+				4D61AD761D3F914A00C079E2 /* FridayCell.swift in Sources */,
+				4D61AD6A1D3F900700C079E2 /* WednesdayCell.swift in Sources */,
+				4D61AD7E1D3F91D700C079E2 /* SundayTableVIewController.swift in Sources */,
+				4D61AD781D3F916000C079E2 /* FridayTableViewController.swift in Sources */,
 				4D20FAD51D10A6D5007CC662 /* AppDelegate.swift in Sources */,
+				4D61AD721D3F912300C079E2 /* AddTaskThursday.swift in Sources */,
+				4D61AD661D3F8F2C00C079E2 /* AddTaskThuesDay.swift in Sources */,
+				4D61AD6C1D3F902F00C079E2 /* WednesdayTableViewController.swift in Sources */,
+				4D61AD801D3F91F600C079E2 /* SundayCell.swift in Sources */,
 				B351FD4A1D249B0E00EFDEA5 /* TimetableController.swift in Sources */,
+				4D61AD641D3F8EEC00C079E2 /* ThuesDayTableViewController.swift in Sources */,
+				4D61AD7C1D3F91C700C079E2 /* AddTaskSunday.swift in Sources */,
 				4D81692C1D3D96F300B5DD63 /* MondayTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

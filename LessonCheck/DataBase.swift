@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class DataBase: Object {
+class DataBaseMonday: Object {
     
     dynamic var TeacherName = ""
     dynamic var Subject = ""
@@ -20,11 +20,85 @@ class DataBase: Object {
     dynamic var HomeWork = ""
     dynamic var EventName = ""
     dynamic var EventTime = ""
-    
-    
-// Specify properties to ignore (Realm won't persist these)
-    
-//  override static func ignoredProperties() -> [String] {
-//    return []
-//  }
+
 }
+
+class DataBaseThuesDay: Object {
+	
+	dynamic var TeacherName = ""
+	dynamic var Subject = ""
+	dynamic var StartTime = ""
+	dynamic var FinishTime = ""
+	dynamic var ClassRoom = ""
+	dynamic var SubjectHomeWork = ""
+	dynamic var HomeWork = ""
+	dynamic var EventName = ""
+	dynamic var EventTime = ""
+	
+}
+
+
+class DataBaseWednesDay: Object {
+	
+	dynamic var TeacherName = ""
+	dynamic var Subject = ""
+	dynamic var StartTime = ""
+	dynamic var FinishTime = ""
+	dynamic var ClassRoom = ""
+	dynamic var SubjectHomeWork = ""
+	dynamic var HomeWork = ""
+	dynamic var EventName = ""
+	dynamic var EventTime = ""
+	
+}
+
+
+class DataBaseThursday: Object {
+	
+	dynamic var TeacherName = ""
+	dynamic var Subject = ""
+	dynamic var StartTime = ""
+	dynamic var FinishTime = ""
+	dynamic var ClassRoom = ""
+	dynamic var SubjectHomeWork = ""
+	dynamic var HomeWork = ""
+	dynamic var EventName = ""
+	dynamic var EventTime = ""
+	
+}
+
+
+class DataBaseFriday: Object {
+	
+	dynamic var TeacherName = ""
+	dynamic var Subject = ""
+	dynamic var StartTime = ""
+	dynamic var FinishTime = ""
+	dynamic var ClassRoom = ""
+	dynamic var SubjectHomeWork = ""
+	dynamic var HomeWork = ""
+	dynamic var EventName = ""
+	dynamic var EventTime = ""
+	
+}
+
+
+class DataBaseSunday: Object {
+	
+	dynamic var TeacherName = ""
+	dynamic var Subject = ""
+	dynamic var StartTime = ""
+	dynamic var FinishTime = ""
+	dynamic var ClassRoom = ""
+	dynamic var SubjectHomeWork = ""
+	dynamic var HomeWork = ""
+	dynamic var EventName = ""
+	dynamic var EventTime = ""
+	
+}
+
+
+
+
+
+

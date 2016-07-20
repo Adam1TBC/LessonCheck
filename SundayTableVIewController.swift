@@ -1,8 +1,8 @@
 //
-//  MondayTableViewController.swift
+//  SundayTableVIewController.swift
 //  LessonCheck
 //
-//  Created by Адам Смирнов on 19.07.16.
+//  Created by Адам Смирнов on 20.07.16.
 //  Copyright © 2016 Адам Смирнов. All rights reserved.
 //
 
@@ -10,13 +10,13 @@ import UIKit
 import RealmSwift
 import KRProgressHUD
 
-class MondayTableViewController: UITableViewController {
+class SundayTableViewController: UITableViewController {
 	
 	let realm = try! Realm()
 	
-    //Refresh
-    var refresh: UIRefreshControl!
-    
+	//Refresh
+	var refresh: UIRefreshControl!
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		//Refresh
@@ -41,14 +41,14 @@ class MondayTableViewController: UITableViewController {
 	}
 	
 	override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		let database = realm.objects(DataBaseMonday)
+		let database = realm.objects(DataBaseSunday)
 		return database.count
 	}
 	
 	override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! MondayCell
+		let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! SundayCell
 		
-		let database = realm.objects(DataBaseMonday)
+		let database = realm.objects(DataBaseSunday)
 		
 		cell.Subject.text! = database[indexPath.row].Subject
 		cell.Teacher.text! = database[indexPath.row].TeacherName
@@ -66,7 +66,7 @@ class MondayTableViewController: UITableViewController {
 	
 	override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
 		
-		let database = realm.objects(DataBaseMonday)
+		let database = realm.objects(DataBaseSunday)
 		//Realm Delete
 		if editingStyle == .Delete {
 			try! realm.write({
@@ -75,13 +75,17 @@ class MondayTableViewController: UITableViewController {
 			tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade) // Animation on Delete
 		}
 	}
-    //delete all objects
-    @IBAction func deleteAllObjects(sender: UIBarButtonItem) {
-		let database = realm.objects(DataBaseMonday)
-        try! realm.write {
-            realm.delete(database)
-            KRProgressHUD.showSuccess(progressHUDStyle: .Black, message: "Success")
+	//delete all objects
+	@IBAction func deleteAllObjects(sender: UIBarButtonItem) {
+		
+		let database = realm.objects(DataBaseSunday)
+		
+		try! realm.write {
+			realm.delete(database)
+			KRProgressHUD.showSuccess(progressHUDStyle: .Black, message: "Success")
 			tableView.reloadData()
-        }
-    }
+		}
+	}
+
+
 }

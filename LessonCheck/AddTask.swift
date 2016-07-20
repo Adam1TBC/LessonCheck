@@ -24,7 +24,7 @@ class AddTask: UITableViewController {
 	let realm  = try! Realm()
 	
 	@IBAction func addButtonAction(sender: AnyObject) {
-		let database = DataBase()
+		let database = DataBaseMonday()
 		
 		database.Subject = SubjectTextField.text!
 		database.TeacherName = teacherTextField.text!
