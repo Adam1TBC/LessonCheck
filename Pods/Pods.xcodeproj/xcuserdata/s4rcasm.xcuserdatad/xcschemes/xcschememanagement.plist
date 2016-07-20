@@ -24,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>KRProgressHUD.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>NKDropdownMenu.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -47,6 +52,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>002A79E870219FA26D9FCCF693E84BD3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0D129A612F0BEBD455C3EC391525144A</key>
 		<dict>
 			<key>primary</key>
@@ -77,6 +87,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>5211743F271BBECC16BE96AF1CE3DD04</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>74D0667CD489147DD44CE9F23CDB036C</key>
 		<dict>
 			<key>primary</key>
@@ -88,6 +103,11 @@
 			<true/>
 		</dict>
 		<key>82F896B593A9CA2774CCC3B6C01DA264</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A70D30FDFEF664AE0F15DE8BF87178E0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -123,6 +143,11 @@
 			<true/>
 		</dict>
 		<key>DC2E4CA7BCA07E6089617F1A13099559</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ECD9114090614EC5AA7DAA2D60E3B0BE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

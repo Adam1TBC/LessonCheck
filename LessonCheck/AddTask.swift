@@ -9,9 +9,10 @@
 import UIKit
 import RealmSwift
 import KRProgressHUD
+
+
 class AddTask: UITableViewController {
-    
-    
+
     @IBOutlet weak var startLabel: UILabel!
     @IBOutlet weak var endLabel: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -19,8 +20,6 @@ class AddTask: UITableViewController {
 	@IBOutlet weak var SubjectTextField: UITextField!
 	@IBOutlet weak var teacherTextField: UITextField!
 	@IBOutlet weak var classroomTextField: UITextField!
-	
-	
 	
 	let realm  = try! Realm()
 	
@@ -36,24 +35,14 @@ class AddTask: UITableViewController {
 		do {
 			_ = try Realm()
 		} catch _ as NSError {
-			KRProgressHUD.showError(progressHUDStyle: .Black , message: "Произошла ошибка")
+			KRProgressHUD.showError(progressHUDStyle: .Black , message: "Error")
 			}
-			
-			
-			
-	
-
-		
 		
 		try! realm.write({
 			realm.add(database)
 		})
 		
 		KRProgressHUD.showSuccess(progressHUDStyle: .Black, message: "Success")
-		
-
-
-		
 	
 	}
     override func viewDidLoad() {

@@ -8,13 +8,15 @@
 
 import UIKit
 import RealmSwift
+import KRProgressHUD
 
 class MondayTableViewController: UITableViewController {
 	
-	
 	let realm = try! Realm()
-	var refresh: UIRefreshControl! // Refresh Controll
 	
+    //Refresh
+    var refresh: UIRefreshControl!
+    
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		//Refresh
@@ -22,9 +24,6 @@ class MondayTableViewController: UITableViewController {
 		refresh.attributedTitle = NSAttributedString(string: "Pull to refresh")
 		refresh.addTarget(self, action: #selector(update), forControlEvents: .ValueChanged)
 		tableView.addSubview(refresh) // not required when using UITableViewController
-		
-		//123
-		
 	}
 	
 	override func viewDidAppear(animated: Bool) {
@@ -60,9 +59,6 @@ class MondayTableViewController: UITableViewController {
 		return cell
 	}
 	
-	
-	
-	
 	override func prefersStatusBarHidden() -> Bool {
 		
 		return true
@@ -77,8 +73,13 @@ class MondayTableViewController: UITableViewController {
 				realm.delete(database[indexPath.row])
 			})
 			tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade) // Animation on Delete
-			
 		}
-		
 	}
+    //delete all objects
+    @IBAction func deleteAllObjects(sender: UIBarButtonItem) {
+        try! realm.write {
+            realm.deleteAll()
+            KRProgressHUD.showSuccess(progressHUDStyle: .Black, message: "Success")
+        }
+    }
 }
