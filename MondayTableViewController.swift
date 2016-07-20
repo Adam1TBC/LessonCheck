@@ -80,6 +80,7 @@ class MondayTableViewController: UITableViewController {
         try! realm.write {
             realm.deleteAll()
             KRProgressHUD.showSuccess(progressHUDStyle: .Black, message: "Success")
+			tableView.reloadData()
         }
     }
 }
